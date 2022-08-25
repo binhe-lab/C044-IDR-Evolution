@@ -2,7 +2,7 @@ import csv
 #list_l=[[2, 3, 4, 5], [3, 5, 7, 8], [7, 6, 8, 4]]
 #with open('Test_min_max.csv', 'w') as file:
     #writer=csv.writer(file)
-
+#Note input file should only have 100 protein inputs. Unfortunately terminal cannot handle more.
 input_file=input("Enter name of input file: ")
 print(input_file)
 
@@ -52,7 +52,7 @@ def int_calculator(list_l):
                     int_calc.clear()
                     
         elif i==len(list_l): 
-            with open(output_file, 'w') as file:
+            with open(output_file, 'a') as file:
                 writer=csv.writer(file) 
                 header=['data type', 'protein code', 'molecular feature z score']
                 writer.writerow(header)
