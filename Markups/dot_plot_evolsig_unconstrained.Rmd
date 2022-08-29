@@ -1,0 +1,50 @@
+---
+title: distribution of IDR z-scores for yeast proteome
+author: Lucretia Shumate
+date: 2022-08-29
+output: html_notebook
+---
+
+```{r}
+install.packages("tidyverse")
+install.packages("cowplot")
+library(ggplot2)
+library(dplyr)
+```
+
+## Goal
+
+## Data
+
+## Analysis
+
+```{r}
+rm(list=ls())
+getwd()
+
+z_score_data<-read.csv("min_max_molecular_features_data.csv", header=TRUE, sep=",", stringsAsFactors=TRUE)
+set.seed(0)
+min_data<-data.frame(z_score_data)[,1:3]
+max_data<-data.frame(z_score_data)[,5:7]
+print(min_data)
+print(max_data)
+highlight_df <- z_score_data[z_score_data$protein.code %in% c("YFR034C_idr_3"),]
+print(highlight_df)
+```
+
+```{r min}
+ggplot(min_data, aes(min_data[,3])) +
+  geom_dotplot(binwidth=0.2) +geom_point(data=highlight_df, aes(highlight_df[,3], y=0), color='red')+
+  labs(title = "Stacked Dot Plot: Min", x = "Molecular Features Value Minimum", y = "count")
+```
+
+```{r max}
+ggplot(min_data, aes(max_data[,3])) +
+  geom_dotplot(binwidth=0.127) +geom_point(data=highlight_df, aes(highlight_df[,7], y=0), color='red')+
+  labs(title = "Stacked Dot Plot: Max", x = "Molecular Features Value Maximum", y = "count")
+```
+
+```{r analysis}
+summary(min_data) #2nd quartile -4.6
+summary(max_data) #4th quartile  7.3
+```
