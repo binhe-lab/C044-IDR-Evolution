@@ -17,7 +17,7 @@ IPSKATTVELASKYITALLKEVEELKGRK
 ---
 
 ---
-!(This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C._albicans.png)
+!(This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C._albicans.png) 
 ---
 ---
 ![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C_albicans.png)
