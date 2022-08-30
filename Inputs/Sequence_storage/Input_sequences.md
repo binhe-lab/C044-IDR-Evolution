@@ -1,4 +1,8 @@
 ---
+Original sequence, PsiPred result, DisoPred3 result, IDR sequence
+---
+
+---
 >AFA36294.1 PHO4 protein [Candida albicans]
 MDQQVWNPIFSPSGTTPGKSPSYYNELAPQSQSHISNQDPQLPLQTQHHQLFHIDGGSDHSTPSGNIQLP
 SSSQQNTPHIVSNTPTAFADSDQVFLQHMEMYDNQQHTNQSAGNTPGPISFHNHNPNLQQASQQPHQHIS
@@ -14,6 +18,8 @@ IPSKATTVELASKYITALLKEVEELKGRK
 
 ---
 !(This is an image](https://https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C%20albicans.JPG)
+---
+---
 ![This is an image](https://https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C.%20albicans.png)
 ---
 
