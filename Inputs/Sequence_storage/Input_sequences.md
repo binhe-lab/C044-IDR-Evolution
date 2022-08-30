@@ -13,7 +13,7 @@ IPSKATTVELASKYITALLKEVEELKGRK
 ---
 ```
 !(This is an image](https://https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C%20albicans.JPG)
-![This is an image](https://drive.google.com/file/d/1qytCSWPdKcel5vAVsu0FyKKrKpCRnwx7/view?usp=sharing)
+![This is an image](https://https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C.%20albicans.png)
 ```
 ---
 >AFA36294.1 PHO4 protein IDR [Candida albicans]
