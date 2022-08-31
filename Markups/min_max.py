@@ -35,6 +35,7 @@ print(line_L)
 '''
 The point of lines 38-41 is to make each line entry into a list to find min and max.
 '''
+features=line_L[0].strip('\t')
 split_line_L=[]
 for i in range(1,len(line_L)):
     split_line_L.append(line_L[i].split('\t'))
@@ -67,7 +68,7 @@ def int_calculator(list_l):
                     elif list_l[i][j]=='NA':   #avoid error of data type
                         j+=1
                     else:
-                        int_calc.append(float(list_l[i][j]))                    
+                        int_calc.append([float(list_l[i][j]), features[j]])                    
                     #int_calc.append(float(list_l[i][j]))
                 elif j==len(list_l[i]):  #end of one protein values, uses info in int_calc and finds min max and proceeds to clear int_calc
                     minimum.append(['min', list_l[i][0], min(int_calc)]) 
