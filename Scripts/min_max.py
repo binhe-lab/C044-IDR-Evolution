@@ -14,7 +14,7 @@ with open(input_file, 'r') as f:
         line_L.append(line.strip())
         
 print(line_L)
-
+features=line_L[0].strip('\t')
 split_line_L=[]
 for i in range(1,len(line_L)):
     split_line_L.append(line_L[i].split('\t'))
@@ -43,7 +43,7 @@ def int_calculator(list_l):
                     elif list_l[i][j]=='NA':
                         j+=1
                     else:
-                        int_calc.append(float(list_l[i][j]))                    
+                        int_calc.append([float(list_l[i][j]), features[j]])                    
                     #int_calc.append(float(list_l[i][j]))
                 elif j==len(list_l[i]):
                     minimum.append(['min', list_l[i][0], min(int_calc)]) 
