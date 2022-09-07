@@ -15,9 +15,13 @@ QQDDSNPMLPPNGKPVEITGAPLMGFTMGKLAEGGAGTVADKKSAKKAGANNGKLSRKPSYSKNRNSVSS
 SSDESSSTSASTSPKMLANNGTNSSGKRSEKPATKKASHKLAEQGRRNRMNNAVQELGRLIPQSYHDEVS
 IPSKATTVELASKYITALLKEVEELKGRK
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C._albicans.png) 
+![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/PsiPred/C._albicans.png) 
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C_albicans.png)
+![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/PsiPred/C_albicans.png)
+
+![This is an image]()
+
+![This is an image]()
 
 >AFA36294.1 PHO4 protein IDR [Candida albicans]
 MDQQVWNPIFSPSGTTPGKSPSYYNELAPQSQSHISNQDPQLPLQTQHHQLFHIDGGSDHSTPSGNIQLP
@@ -42,8 +46,13 @@ NPQINNPHSNGSSISPVGKNDSVMLASGSPVLKPQNSSSNILQTPYSSKRVFKSPADISSTEQTADEASN
 DASNDAKSKDKKQRKPSSSGPNKLKRTNTGGSIGRVRSDSASQNSDYVQRKKEVHKYAEQERRNRLNNAL
 SDLNSLLPQDWKDAVTVPSKAITAELACKYIRTLLEELEQYKK
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C.%20glabrata.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C_glabrata.png)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >UCS35305.1 PHO4 IDR [[Candida] glabrata]
 MGEQVEDMDKLYETPIDMNSGLQHDEKEDEHREHEDAIDGGASLNMHLYNINDTLNGVSTDNGHFDMVDL
@@ -66,8 +75,13 @@ RTPHGTPILAANNNSLSAVATAKYSPSIKPRMEKLPSSSYIEEAGARSKSTTPMLPPSGKPPVLNGSNTS
 AITSATTTAPNPSATPLMGFTMGRLAEQQEEEDDDDEDNQDAMSMSRSSTSNTSLNLSRKSSTSGIKKEK
 PATKKASHKLAEQGRRNRMNMAVHELGSLIPQKFHDEVAIPSKATTVELASKYIRALLNEMEGMKRELGR
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C.%20subhashii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/C%20subhashii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >XP_049262169.1 PHO4 IDR [[Candida] subhashii]
 MESTSWATTFSPNPDTTNTSNTTPGKSPYYPETIPHSTPQQPQQQQQQQLPSSNNSNNSNSMRFDQQPSN
@@ -90,8 +104,13 @@ FTMSVLAEQQQEGSNNSSVDMVHRTTSNGQTRNGSTYANNNIPPKSSSSSETSPIMGSQGSGESSPVLTR
 TKSRSEKPTTKKASHKLAEQGRRNRMNMAVQELSNLIPQAYHDEVSIPSKATTIELASKYIRDLIKENNE
 MKYYNLER
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/D.%20hansenii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/D%20hansenii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >XP_458014.2 DEHA2C07656p IDR [Debaryomyces hansenii CBS767]
 METTDWSNTVYSPGVKGETSPYFHDLEHDTAGGHGVNGAQQASNQTTNQTTPNLYEAASNGTPGSSNGS
@@ -108,8 +127,13 @@ SPYLNKRRGKPGPDSATSLFELPDSVIPTPKPKPKPKQYPKVILPSNSTRRVSPVTAKTSSSAEGVVVAS
 ESPVIAPHGSSHSRSLSKRRSSGALVDDDKRESHKHAEQARRNRLAVALHELASLIPAEWKQQNVSAAPS
 KATTVEAACRYIRHLQQNVST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/E.%20neolycopersici.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/E%20neolycopersici.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >RKF65350.1 Phosphate system positive regulatory protein PHO4 IDR, partial [Erysiphe neolycopersici]
 SPYLNKRRGKPGPDSATSLFELPDSVIPTPKPKPKPKQYPKVILPSNSTRRVSPVTAKTSSSAEGVVVAS
@@ -129,8 +153,13 @@ GGTGAGGENNEKQSPTVQKQGFNNINSSSNSSNTKLKKNNGSTTTSPTINANANSTTSTSGATATAAPSL
 TAPSASSSNSSVKSNGRTRSVPRRRTSLRGSNRSSQKPKSSSEDDENDADADRENERDEEDDDDDDVVKK
 QKQVHKVAEQGRRNRLNNALKDLESLIPKELKDVAAIPSKATTVELAAQYIRQLLKANSNQ
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/K.%20lactis.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/K%20lactis.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >QEU60988.1 Pho4 IDR [Kluyveromyces lactis]
 MSDDYLHGVSPAEHSRSHHHSNYNGNHDLNMDDGNDSRNEGQNGDTGNNGPGTNSHRHERDDVKHEDQADE
@@ -154,8 +183,13 @@ GRHSQSHGNTTEEATPKSTSSASSTHSTYNQDSGEPRVTPATLMNYPKIILPSNNNRDATPTDPANMRNINV
 IRATESPVLRPKMSSHQSHNSRQNSINSASRQTPELNPRRRSSKTSLNEVVVSEGDEVVKKEVHKVAEQGRR
 NRLNNALTELHALIPQDLKETVLIPSKATTVELACQYIKILTGQQDEAES
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/L.%20kluyveri.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/L%20kluyveri.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >SAKL0F07392g1_1 PHO4 Protein IDR [Lachancea kluyveri]
 MSHPSDSHGLPSHNITSETIGLNDDAPHNDHRNDSTILTEHDHSHWASENLQLDLDDLSHSLLKNDNSLRSGEH
@@ -176,8 +210,13 @@ SRDGENSDYNPTTTTNINYPKVILPSNNRDSSGRAHSPVRDHNSHGNGHVIMATDSPVIQAKNPHLPVARHASGGS
 SLGGGAPRSTPELKPLRQGSKSSLNDSEVDPDDDQQQKKEVHKAAEQGRRDRLNNALAELHSLIPTEMKESVLIPS
 KATTIEMACAYIRQLAQQLERSQ 
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/L.%20waltii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/L%20waltii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >LAWA0B04082g1_1 PHO4 Protein IDR [Lachancea waltii]
 MNDNGSFDSDQGVRQGEGSTPHFQDLEFQMHPGTQRDSHQHQSLQQHPGSSLSLDLHDLDSLHKPQGLQLDLDVHAQ
@@ -199,8 +238,13 @@ NNSTMIDAEQLPNNSPSTSKILFANASPVIQARRISLKKTQRDSSLELESTNNENILESNVISMNTGNKPAPINNKI
 KSEYSKKEVHKAAEQERRNRLNNALNDLNSLLPEDWKKAVAIPSKATTAELGCKYIRSLLAEIAQLKKQLPDSNINN
 DV
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N.%20bacilisporus.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N%20bacilisporus.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >BN123_NABA0s03e02948g1_1 PHO4 Protein IDR [Nakaseomyces bacillisporus]
 MNPVDDGFIDEIENDNILSNTHNNTVTSASTHTNSSHLNENNSEDDGFFQNNVSLYMDDDDDSKLMLPSFNDHQDLQM
@@ -221,8 +265,13 @@ QVENNYTKSRSGTSTENNSVSPSYRSDTILMATESPVIRPSKSSTTLKHSRHSSSTKLFKLPNELNAGENDNSKPASV
 EPTRNTPISNKPKRSGSITKARSNSTSQEDSIQRKKEVHKNAEQERRNRLNNALSELNSLLPKEWKDSVAIPSKATTA
 QLACKYIRKLEAELEHYRNA
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N.%20barcarensis.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N%20barcarensis.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >BN119_CABR0s16e03993g1_1 PHO4 Protein IDR [Nakaseomyces bracarensis]
 MPLSNGGMEDMGMYGSPMDEKKAEFDVHKESIVPNDGLELEELQFDLHNDHMNHGLDIHDDENVSSHDSSAPKDTPSLL
@@ -241,8 +290,13 @@ SSLGNDKDSDKTLEKKTSDDSFKLLDMTQNNTFPQVILPSNSLDKGTEDFVNRFEKSFPDPSHDLKHSKSRSGTSTENT
 SVSPSYRSDNVIMATESPVIQPLGLRNSRQSSTKLFKSAFDQHTNEQDKAAAAVEQPILSNKPKRSGSSTNTRSNSLSQ
 EESIQRKKEVHKNAEQERRNRLNNALSELNSLLPKEWKDAVAIPSKATTAQLACKYIRKLEEELENYRK
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N.%20delphensis.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N%20delphensis.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >BN124_NADE0s12e00990g1_1 PHO4 Protein IDR [Nakaseomyces delphensis]
 MEDIGMYGSLHMVDEDEKKSGTDMDFDIKELEDLQFESLEHHDSFVGAVHHSLHLDINEDVNVSPHESARKDTPSLLAKNE
@@ -261,8 +315,13 @@ ADNETEKKHSEDTYKLLDVTQNNVFPQVILPSNSLDTKGDGFVNQYEKQFGDHSIPQQDSKHPSSRSGTSTENTSVSPSY
 SDNILMATESPVIRPSGSSTTLKHSRHSSSTKLFKSPIELNSTENDKSPVLPPPSVEQQPKSSNKTRRSGSMTKARSNSLS
 QEESIQRKKEVHKNAEQERRNRLNNALSELNSLLPKEWKDAVAIPSKAITAQLACKYIRKLEAELEQYRK
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N.%20nivariensis.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/N%20nivariensis.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >BN122_CANI0s08e01177g1_1 PHO4 Protein IDR [Nakaseomyces nivariensis]
 MPLTNGGMEDMYGSGDEEKKSGTDMDDIPFDMEDLQLESLAHDDFAGTMNHHGLHLDIQADESVSTEPKDTSLMARNIQLEP
@@ -282,8 +341,13 @@ DGYNNALNYPKVVLPSNKKNSGSSEQQEAMDDNIKEGSHDGPQDTNIRTRILFANESPVIQPRRPSIRRLSKRYESASDL
 RESEQQNNLKHGIDVGSSYDSGTMHKTISNDYSHSRDKYMKKEVHKAAEQERRNRLNNALNDLSSLLPQEWKAEIAVPSKAIT
 AELGCRYIRDLLKEIENLKASRTE
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nk.%20castellii%20gryc.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nk%20castellii%20gryc.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >BN121_CACA0s05e10208g1_1 PHO4 Protein IDR [Nakaseomyces castellii]
 MNKSHDLDDELKPDNFKDNIQSEHIDWSKDKSYQQASGDLFESLFTHQAAGNSLSGGRVSSKDTQQIHDTDVTSASPKSPSID
@@ -302,8 +366,13 @@ YGSSFRKSASSISSNKDFKRPSFEHISPLVSPALLARKPAKSQDMEIYLPVSSTTMKMNSSSFMNISQGSELNANNTNRS
 RPSQNLETKVVLPSSDFESIFKSVSKDKRIIRATKSPVIKPRNTRRRSSFNNDIIKENPREMELPAKKSSSAVEKKDVSKTKK
 QLSHRESEQERRNRLNNAISSLESLLPKDLKDSVAIPSKAGTVELAVKYIKQLHERLGI
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nm.%20castellii%20ncbi.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nm%20castellii%20ncbi.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >XP_003676616.1 hypothetical protein NCAS_0E01860 IDR [Naumovozyma castellii CBS 4309]
 MTQEFADNVSKSNAGGSVSMKMNSSSFMNISQGSELNANNTNRSHHHRPSQNLETKVVLPSSDFESIFKSVSKDKRIIRATKS
@@ -318,8 +387,13 @@ YGSSFRKSASSISSNKDFKRPSFEHISPLVSPALLARKPAKSQDMEIYLPVSSTTMKMNSSSFMNISQGSELNANNTNRS
 RPSQNLETKVVLPSSDFESIFKSVSKDKRIIRATKSPVIKPRNTRRRSSFNNDIIKENPREMELPAKKSSSAVEKKDVSKTKK
 QLSHRESEQERRNRLNNAISSLESLLPKDLKDSVAIPSKAGTVELAVKYIKQLHERLGI
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nm.%20castellii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Nm%20castellii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >NCAS_0E01860-1_1 PHO4 Protein IDR [Naumovozyma castellii]
 MTQEFADNVSKSNAGGSVSMKMNSSSFMNISQGSELNANNTNRSHHHRPSQNLETKVVLPSSDFESIFKSVSKDKRIIRATKS
@@ -333,8 +407,13 @@ DWMMPSHMHHSPATTATIKPRLLYSPLIHTQNAVPVTISPNLVATTTTTTTTNNSSTSTSANKITKNKSNSSSSPYLNKL
 SGPDSAASLFELPDSVIPTPKPKSKKYPKVILPSNTKRRISSATTATTMTTTTSSGEEVVVASESPVIAPHGHGSVRPLSRRR
 SSGVLVDDDKRESHKHAEQARRNRLAVALHELSSLIPAEWKQQNVSAAPSKATTVEAACRYIRHLQRHGST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20arboricola.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20arboricola.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >EJS43866.1 pho4p IDR [Saccharomyces arboricola H-6]
 MGRTTSEGIRGFVDDLGDEREDLNGPNKENENENENEQENEQEEGIDMDWMMPSHMHHSPATTATIKPRLLYSPLIHTQNAVP
@@ -349,8 +428,13 @@ VEGMDMDWMMPSHAHHSPATTATIKPRLLYSPLIHTQSAVPVTISPNLVATATSTTSANKVTKNKSNSSPYLNKRRGKPG
 ATSLFELPDSVIPTPKPKPKPKQYPKVILPSNSTRRVSPVTAKTSSSAEGVVVASESPVIAPHGSSHSRSLSKRRSSGALVDD
 DKRESHKHAEQARRNRLAVALHELASLIPAEWKQQNVSAAPSKATTVEAACRYIRHLQQNVST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20cerevisiae.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20cerevisiae.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >QHB08372.1 Pho4 IDR [Saccharomyces cerevisiae]
 MGRTTSEGEDFNEQNDELNSQENHNSSENGNENHAHHSPATTATIKPRLLYSPLIHTQSAVPVTISPNLVATATSTTSANKVT
@@ -364,8 +448,13 @@ MSQESRRTRHAMGRTSSEGPHGFVDDLEPKSSILDKVGDFITVAKRHGEREDVDVDHDHHHHQENENDNDNDNDNDNDEL
 DLDRAFELVEGMDMDWMMPSHAHHAPATTTTIKPRLLYSPLIHTQTAVPVTISPNLMATTFTSANKITKNKNNSSPYLNKRRG
 KPGPDSAASLFELPDSVIPTPKPKPKPKQYPKVILPSNSTRHSSCATASSSTTTSNNDGVVVASESPVIA
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20eubayanus.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20eubayanus.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >XP_018222570.1 PHO4-like protein IDR, partial [Saccharomyces eubayanus]
 MSQESRRTRHAMGRTSSEEDVDVDHDHHHHQENENDNDNDNDNHSSCATASSSTTTS
@@ -378,8 +467,13 @@ DMDWMMSSHAHHSSATTATIKPRLLYSPLIHTQNAVPVTISPNLVATTTSTTTGTNTSTSTSANKITKNKSNSSPYLNKR
 AGPDSATSLFELPDSVIPTPNPKPKQYPKVILPSNSTRRISSATTKTTSSSSEGVVVASESPVIAPHGSSGMRPLSRRRSSGL
 LVDDDKRESHKHAEQARRNRLAVALHELAFLIPAEWKQQNVSAAPSKATTVEAACRYIRHLQRHGST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20kudriavzevii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20kudriavzevii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >EJT41994.1 PHO4-like protein IDR [Saccharomyces kudriavzevii IFO 1802]
 MGRTTSGGREDLNEQNDELDNQENRDGDANENEQDSHAHHSSATTATIKPRLLYSPLIHTQNAVPVTISPNLVATTTSTTTGT
@@ -394,8 +488,13 @@ VEGIDMDWMMPSHAHHSPATTATIKPRLLYSPLIHTQNAVPVTISPNLVATTTSTTSTSSTSANKVTKNKMNSSPYLNKR
 AGPDSATSLFELPDSVIPTPKPKPKQYPKVILPSNNTRRVSPATTKTNSSEGVVVASESPVIAPHGLSNSRSLTKRRSSGALV
 DDDKRESHKHAEQARRNRLAVALHELSSLIPAEWKQQNVSAAPSKATTVEAACRYIRHLQQNGST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20paradoxus.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20paradoxus.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >XP_033766099.1 Pho4 IDR [Saccharomyces paradoxus]
 MGRTTSEGIHGFVDDLNTKRHDEREDLNGQNDELNNQENRNGSENGNENENEQDSLADGMDWMMPSHAHHSPATTATIKPRLL
@@ -410,8 +509,13 @@ EGMDMDWMMPSHAHHAPATTTTIKPRLLYSPLIHTQTAVPVTISPNLMATTFTSANKITKNKNNSSPYLNKRRGKPGPDS
 LFELPDSVIPTPKPKPKPKQYPKVILPSNSTRHSSCATASSSTTTSNNDDVVVASESPVIAPHGSGGGRPLSRRRSSGLIVDD
 DKRESHKHAEQARRNRLAVALHELAALIPPEWKQQHVSTAPSKATTVEAACRYIRHLQRHGST
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S.%20pastorianus.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/S%20pastorianus.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >QID84820.1 phosphate-sensing transcription factor IDR [Saccharomyces pastorianus]
 MGRTSSEGEDVDVDHDHHHHQENENDNDNDNDNDNSHAHHAPATTTTIKPRLLYSPLIHTQTAVPVTISPNLMATTFTSANKI
@@ -431,8 +535,13 @@ TNISSVSSTPQIAAKKQQQQHSGKKGSISGSSNGGSSSGGNGPGSSKIAPQPPSRRSSSVSASPALMPKISPQIKPMMSE
 LDYQTLLATKSNYQNIVEGKHNALGLQYPEHLSVNIASKRTSHKLAEQGRRNRINNALADLGKLLVPESASTSKANTVENAID
 YIRKLKTELVEVTTKADRLQAFLQAKGLSDEFEATMGVLVKEEDKNWQGAES
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Y.%20lipolytica.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Y%20lipolytica.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >YALI0F05126g1_1 PHO4 Protein IDR [Yarrowia lipolytica]
 MSELEHPDSYPNSVSPSSPSKGQQTQNQQQGQTQGQGQQQQQQHHQHQQQGHPQHQNQHQSHHNGTGQHNNPHNGSPAATTTH
@@ -453,8 +562,13 @@ TREAMAPSPGSKMTPATLMNYPKVILPSNNRSEHSQSPDEKIESDSKVWRATESPVIKPRHSQARPTVRTTQLPATSSQS
 IRQDAPRQDTRPKYKTSRSSSSINLAGSGGVSGSPTEEDESSKREVHKVAEQGRRNRLNMALTELNSLLPSELKETVVIPSKA
 TTVELACMYIRQLRGDAPTS
 
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Z.%20parabailii.png)
-![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/Z%20parabailii.JPG)
+![This is an image]() 
+
+![This is an image]()
+
+![This is an image]()
+
+![This is an image]()
 
 >AQZ14724.1 PHO4 (YFR034C) IDR [Zygosaccharomyces parabailii]
 MESRDPSESYTADIHPEKHESQRDSTQWQSMQVDLDQLSHTLFENKNEQQQPPNQQQQVQAHVRPGSVSANATPFLDTSTDSN
