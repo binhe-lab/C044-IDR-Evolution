@@ -1,7 +1,11 @@
 '''
 IDR sequence predictions
+'''
+
+'''
 These are the IDR predictions of the 23 homologous Pho4 proteins. The non-IDR regions which need to be removed from each sequence are enclosed by brackets {} the rest of the sequence will be kept. These predictions are based on the PsiPred/DisoPre3, IUPred3, and ODiNPred data found in Input_sequences.md. There is a generalized model at the top of the file showing how the regions fit in an alignment. 
 '''
+
 '''
 
 [IDR region]{Non-IDR}[---------IDR Region----]{Non-IDR}[----------------------------IDR Region----------------------------------]{Non-IDR}
