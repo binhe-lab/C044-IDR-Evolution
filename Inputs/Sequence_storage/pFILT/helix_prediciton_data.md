@@ -1,6 +1,10 @@
 '''
 This file contains the helix predictions using pGenTHREADER on PsiPred using the pFILT algorithm. 
 '''
+'''
+Here is the alpha fold prediction
+![This is an image](https://github.com/LShumate/IDR-evolution/blob/main/Inputs/Sequence_storage/pFILT/alphafold_pho4.JPG)
+'''
 
 '''
 S. cerevisiae
