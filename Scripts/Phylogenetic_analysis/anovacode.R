@@ -26,3 +26,8 @@ for(i in 3:ncol(mol_feats_df)){
   #anova_results<-anova(mol_feats_model)
   }
 #anova_results
+
+# Bin's suggestion
+res <- lapply(mol_feats_df[,3:ncol(mol_feats_df)], function(x){
+  mol_feats_model<-lm(x ~ mol_feats_df$Group)
+})
