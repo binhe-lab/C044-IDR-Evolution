@@ -1,3 +1,7 @@
+#Lucretia Shumate
+#2022
+#This code calculates Wilks-Shapiro normality test and Skewness for each molecular features.
+
 rm(list=ls())
 getwd()
 library(dplyr)
