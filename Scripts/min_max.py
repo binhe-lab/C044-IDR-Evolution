@@ -1,3 +1,10 @@
+'''
+Lucretia Shumate
+2022
+'''
+'''
+This file is meant to find the minimum and maximum value of a proteins molecular features. The input files are evolsig_unconstrained.txt.
+'''
 import csv
 #list_l=[[2, 3, 4, 5], [3, 5, 7, 8], [7, 6, 8, 4]]
 #with open('Test_min_max.csv', 'w') as file:
