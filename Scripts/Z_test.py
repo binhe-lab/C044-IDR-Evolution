@@ -1,3 +1,11 @@
+'''
+Lucretia Shumate
+2022
+'''
+'''
+This code calculates the Z test and Welch's T test for each molecular feature between Pho2 independent and dependent groups.
+'''
+
 import math
 import csv
 
