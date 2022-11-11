@@ -1,3 +1,10 @@
+'''
+Lucretia Shumate
+2022
+'''
+'''
+This code calculates the Z score for each homolog's molecular feature based on the features avg and st. dev across the homologs.
+'''
 import csv
 
 '''
