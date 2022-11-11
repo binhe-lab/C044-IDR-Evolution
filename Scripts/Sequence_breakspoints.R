@@ -1,3 +1,7 @@
+#Lucretia Shumate
+#2022
+#This code makes a segment plot to show the IDR sequence. Start at 0, end at end of bHLH segment.
+
 rm(list=ls())
 getwd()
 library(ggplot2)
