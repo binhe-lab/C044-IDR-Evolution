@@ -1,3 +1,7 @@
+#Lucretia Shumate
+#2022
+#This code takes the min and max of each proteins molecular feature and makes a dot plot to check normaility
+
 rm(list=ls())
 getwd()
 library(ggplot2)
