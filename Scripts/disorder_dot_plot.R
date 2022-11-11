@@ -1,3 +1,7 @@
+#Lucretia Shumate
+#2022
+#This code takes IDR percentage prediction and makes a bar chart to show relation to average percent disorder
+
 rm(list=ls())
 getwd()
 library(ggplot2)
