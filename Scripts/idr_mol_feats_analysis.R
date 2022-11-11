@@ -1,3 +1,7 @@
+#Lucretia Shumate
+#2022
+#This file takes the z scores of all homologs of an IDR sequence molecular features calculation and makes a heat map.
+
 rm(list=ls())
 getwd()
 library(ggplot2)
