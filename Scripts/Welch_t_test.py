@@ -1,3 +1,11 @@
+'''
+Lucretia Shumate 
+2022
+'''
+'''
+This code calculates Welch's T test for IDR precent disorder
+'''
+
 import math
 
 def t_welch(group1, group2):
