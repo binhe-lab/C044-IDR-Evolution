@@ -1,8 +1,0 @@
-Species,C. albicans,C. glabrata,C. subhashii,D. hansenii,E. neolycopersici,K. lactis,L. kluyveri,L. waltii,N. bacillisporus,N. bracarensis,N. delphensis,N. nivariensis,Nk. castellii,Nm. castellii,S. arboricola,S. cerevisiae,S. eubayanus,S. kudriavzevii,S. paradoxus,S. pastorianus,Y. lipolytica,Z. parabailii
-Discon_percent_disorder,60.698,71.482,73.75,84.137,77.64,72.793,75.934,78.288,67.837,69.672,80.172,71.579,98.276,80.307,92.812,78.526,86.103,72.468,77.07,92.949,68.017,79.31
-PONDR_number_disordered_regions,16,11,7,7,2,16,10,9,11,10,9,8,12,10,8,4,7,6,4,7,13,7
-PONDR_longest_disorder_region,80,71,180,262,85,135,132,144,87,71,89,103,41,85,87,85,86,85,81,87,183,163
-PONDR_overall_percent_disorder,65.86,55.16,69.29,68.88,67.08,72.07,64.94,73.28,57.67,64.14,61.85,64.84,45.02,55.24,70,66.67,65.26,68.99,66.24,63.14,68.99,66.44
-RAPID_percent_disorder,48.86,53.47,50.36,52.01,62.73,42.98,45.64,44.05,44.73,46.52,61.85,47.37,43.68,43.22,50.62,46.79,41.09,41.77,48.41,40.71,44.27,61.84
-SLIDER_score,0.9133,0.8684,0.9003,0.864,0.7362,0.9222,0.8774,0.8839,0.887,0.8673,0.8689,0.8838,0.8067,0.8406,0.8996,0.8609,0.897,0.847,0.8654,0.8496,0.9013,0.8669
-Avg_percent_disorder,58.47,60.04,64.47,68.34,69.15,62.62,62.17,65.21,56.75,60.11,67.96,61.26,62.32,59.59,71.14,64,64.15,61.08,63.91,65.6,60.43,69.2
