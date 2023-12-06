@@ -1,0 +1,83 @@
+---
+title: "Quick analysis of BLASTP output"
+author: "Bin He"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+set up environment
+```{r, message=FALSE}
+require(tidyverse)
+require(cowplot)
+old <- theme_set(new = theme_cowplot())
+```
+
+import data
+```{r}
+# datS(tringent): E-value cutoff = 1e-5
+# datA(ll): E-value cutoff = 1
+datA <- read_csv("20231205-blastp-343-1e1-output.csv", col_types = cols())
+# species names
+species <- read_tsv("343taxa_speicies-name_clade-name_color-code.txt", col_types = cols())
+```
+
+exploratory analysis
+```{r}
+E.th = 1e-2 # E-value threshold to use
+tmp <- filter(datA, EValues <= E.th) # filter the dataset
+# query coverage distribution
+p.qcov <- ggplot(tmp, aes(QCoverage)) + geom_histogram(aes(y = after_stat(count / sum(count))), bins = 50) +
+  stat_ecdf(color = "red", linewidth = 1) +
+  labs(title = "Query coverage distribution and CDF") + ylab("Frequency")
+p.qcov_piden <- ggplot(tmp, aes(x = QCoverage, y = Identity)) + 
+  geom_hex(bins = 40) + scale_fill_viridis_c(option = "D") +
+  labs(title = "2D density plot, qcov vs pident")
+p.qstart_end <- tmp %>% 
+  select(QStart, QEnD) %>% 
+  pivot_longer(cols = c(QStart, QEnD), names_to = "position", values_to = "coordinate") %>% 
+  mutate(position = case_match(
+    position,
+    "QStart" ~ "start",
+    "QEnD" ~ "end"
+  )) %>% 
+  ggplot(aes(x = coordinate, group = position)) +
+  geom_freqpoly(aes(color = position), bins = 60) +
+  scale_color_manual("Query", values = c("start" = "forestgreen", "end" = "orange2")) +
+  labs(title = "Query start and end position distribution")
+p.qcov
+p.qcov_piden
+p.qstart_end
+```
+> Most of the hits have homology to the DBD
+
+distribution of homologs per species
+```{r}
+my_calc_n_homologs <- function(th = 1e-2){
+  # given the blast hit list, the species list and an E-value threshold
+  # count the number of homologs per species and plot as a bar graph
+  res <- left_join(
+    select(species, Species = old_speceis_names), 
+    filter(datA, EValues <= th), 
+    by = "Species") %>% 
+    group_by(Species) %>% 
+    summarize(n_homologs = sum(!is.na(seq_identifier)))
+  return(res)
+}
+```
+
+```{r}
+thresholds <- c("1" = 1, "0.1" = 1e-1, "0.01" = 1e-2, 
+               "0.001" = 1e-3, "1e-4" = 1e-4, "1e-5" = 1e-5)
+tmp <- map_dfr(thresholds, my_calc_n_homologs, .id = "E.th")
+tmp %>% 
+  mutate(E.th = as.numeric(E.th),
+         E.th = factor(E.th, levels = sort(unique(E.th), decreasing = TRUE))) %>% 
+  ggplot(aes(x = n_homologs, group = E.th)) + 
+  geom_bar(aes(fill = E.th), position = position_dodge(0.9)) + 
+  geom_text(aes(label = after_stat(count)), stat = "count", vjust = -0.5,
+            position = position_dodge(0.9), size = 2.5) +
+  scale_fill_brewer("E_value <", type = "seq", palette = 2) +
+  theme(legend.position = c(0.8, 0.7)) +
+  labs(title = "Distribution of number of homologs per species")
+```
+
