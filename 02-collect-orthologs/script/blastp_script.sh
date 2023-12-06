@@ -34,10 +34,10 @@ echo "Reformatting..."
 
 #blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt 3 -out "$base_output_path/blastp_results.flat"
 #blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt 3 -out "$base_output_path/blastp_results.flat"
-blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt "7 sseqid qcovs qstart qend slen sstart send qcovshsp 
+blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt "7 sseqid qcovs qstart qend slen sstart send qcovshsp \\
 pident mismatch evalue" -out "$base_output_path/blastp_results.txt"
 #blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt "6 sseqid sseq" -out 
-"$base_output_path/blastp_results.fasta"
+#"$base_output_path/blastp_results.fasta"
 #sseqid: Subject sequence ID. This is the identifier of the sequence in the subject database that the query sequence aligned with.
 #qcovs: Query coverage per subject. It represents the percentage of the query sequence that is covered by the alignment with the subject sequence.
 #qstart: Start position of the alignment on the query sequence.
