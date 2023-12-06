@@ -38,21 +38,17 @@ blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt "7 sseqi
 pident mismatch evalue" -out "$base_output_path/blastp_results.txt"
 #blast_formatter -archive "$base_output_path/blastp_results.txt" -outfmt "6 sseqid sseq" -out 
 "$base_output_path/blastp_results.fasta"
-#sseqid: Subject sequence ID. This is the identifier of the sequence in the subject database that the query sequence aligned 
-with.
-#qcovs: Query coverage per subject. It represents the percentage of the query sequence that is covered by the alignment with the 
-subject sequence.
+#sseqid: Subject sequence ID. This is the identifier of the sequence in the subject database that the query sequence aligned with.
+#qcovs: Query coverage per subject. It represents the percentage of the query sequence that is covered by the alignment with the subject sequence.
 #qstart: Start position of the alignment on the query sequence.
 #qend: End position of the alignment on the query sequence.
 #slen: Length of the subject sequence.
 #sstart: Start position of the alignment on the subject sequence.
 #send: End position of the alignment on the subject sequence.
-#qcovshsp: Query coverage per high-scoring pair. It represents the percentage of the query sequence that is covered by the 
-high-scoring pair.
+#qcovshsp: Query coverage per high-scoring pair. It represents the percentage of the query sequence that is covered by the high-scoring pair.
 #pident: Percentage of identical matches. It represents the percentage of nucleotides or amino acids in the alignment that are 
-identical between the query and subject sequences.
+#identical between the query and subject sequences.
 #mismatch: Number of mismatches in the alignment.
-#evalue: E-value, or Expectation value. It represents the expected number of chance matches with a similar or better score that 
-could occur in the database by random chance     
+#evalue: E-value, or Expectation value. It represents the expected number of chance matches with a similar or better score that could occur in the database by random chance     
 echo "Done"
 
