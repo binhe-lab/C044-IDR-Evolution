@@ -1,0 +1,1839 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ../input/bHLH_profile/PF00010.hmm
+# target sequence database:        ../output/Pho4-Homologs-fas/20231212-343taxa-proteins-homologs.fas
+# output directed to file:         20240117-hmmsearch.log
+# per-dom hits tabular output:     ../output/20240117-hmmsearch-bHLH-in-Pho4-blast-hits.txt
+# show alignments in output:       no
+# domain reporting threshold:      E-value <= 0.001
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       HLH  [M=53]
+Accession:   PF00010.30
+Description: Helix-loop-helix DNA-binding domain
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                         -----------
+    2.9e-16   53.3   0.2    6.4e-16   52.2   0.2    1.6  1  yHMPu5000035279_Tortispora_starmeri               Seq_4216
+    6.8e-15   48.9   1.1    1.7e-14   47.6   1.1    1.8  1  yHMPu5000035696_Hanseniaspora_singularis          Seq_3791
+    1.6e-14   47.7   0.6    1.5e-13   44.6   0.2    2.5  1  yHMPu5000035703_Cyberlindnera_americana           Seq_4595
+    2.3e-14   47.3   0.1    5.6e-14   46.0   0.1    1.7  1  Hanseniaspora_vinae                               Seq_405
+      4e-14   46.5   0.4      1e-13   45.2   0.4    1.7  1  yHMPu5000034876_Tetrapisispora_iriomotensis       Seq_3049
+      4e-14   46.5   0.5    9.5e-14   45.3   0.5    1.7  1  Arthrobotrys_oligospora                           Seq_1079
+    4.2e-14   46.4   0.7    9.7e-14   45.2   0.7    1.7  1  yHMPu5000035629_Yueomyces_sinensis                Seq_2096
+    4.7e-14   46.2   0.3    1.1e-13   45.1   0.3    1.6  1  yHMPu5000035650_Trigonopsis_variabilis            Seq_2373
+    6.7e-14   45.8   0.2    1.3e-13   44.9   0.2    1.5  1  Tortispora_caseinolytica                          Seq_4529
+    7.8e-14   45.5   0.2    1.4e-13   44.7   0.2    1.4  1  yHMPu5000035633_Candida_hispaniensis              Seq_2017
+    8.7e-14   45.4   2.7    3.2e-13   43.6   2.1    2.3  1  Candida_infanticola                               Seq_2252
+    9.3e-14   45.3   0.1      2e-13   44.2   0.1    1.6  1  yHMPu5000034675_Blastobotrys_mokoenaii            Seq_2255
+    9.5e-14   45.3   0.7    1.9e-13   44.3   0.7    1.5  1  yHMPu5000035665_Middelhovenomyces_tepae           Seq_5586
+      1e-13   45.2   0.3    2.2e-13   44.1   0.3    1.6  1  yHMPu5000035282_Trigonopsis_vinaria               Seq_570
+      1e-13   45.2   0.7    7.3e-13   42.4   0.2    2.4  1  Cyberlindnera_fabianii_JCM3601                    Seq_2209
+    1.1e-13   45.1   0.3    1.1e-13   45.1   0.3    2.2  1  Eremothecium_gossypii                             Seq_1428
+    1.1e-13   45.1   0.1    2.5e-13   43.9   0.1    1.6  1  Ashbya_aceri                                      Seq_2153
+    1.1e-13   45.0   0.5    2.2e-13   44.1   0.5    1.5  1  Aspergillus_nidulans                              Seq_700
+    1.2e-13   44.9   0.1    2.8e-13   43.8   0.1    1.6  1  yHMPu5000034667_Blastobotrys_serpentis            Seq_5876
+    1.3e-13   44.8   0.1    2.5e-13   43.9   0.1    1.5  1  Eremothecium_cymbalariae                          Seq_1326
+    1.4e-13   44.7   0.7    5.5e-13   42.8   1.3    1.7  1  Eremothecium_sinecaudum                           Seq_3674
+    1.5e-13   44.7   0.4    5.8e-13   42.8   0.4    2.1  1  Saccharomyces_paradoxus                           Seq_2173
+    1.5e-13   44.6   0.5      3e-13   43.7   0.5    1.5  1  yHMPu5000035261_Candida_ponderosae                Seq_4621
+    1.5e-13   44.6   0.8    3.3e-13   43.5   0.4    1.8  1  yHMPu5000035643_Yarrowia_bubula                   Seq_6203
+    1.6e-13   44.6   0.5    3.8e-13   43.3   0.4    1.8  1  Yarrowia_deformans                                Seq_4637
+    1.6e-13   44.6   0.5    3.8e-13   43.3   0.4    1.7  1  yHMPu5000035645_Yarrowia_divulgata                Seq_2097
+    1.6e-13   44.6   1.1    1.7e-13   44.5   0.0    1.6  1  yHMPu5000034673_Blastobotrys_nivea                Seq_4071
+    1.7e-13   44.5   0.4    5.3e-13   42.9   0.4    2.0  1  yHMPu5000034957_Hanseniaspora_osmophila           Seq_862
+      2e-13   44.2   0.1    5.5e-13   42.8   0.1    1.8  1  Sporopachydermia_quercuum                         Seq_4449
+      2e-13   44.2   0.4    3.7e-13   43.4   0.4    1.5  1  Yarrowia_lipolytica                               Seq_2989
+    2.1e-13   44.2   0.0    8.3e-13   42.3   0.0    2.0  1  Neurospora_crassa                                 Seq_3724
+    2.1e-13   44.2   0.4    3.7e-13   43.4   0.4    1.4  1  Yarrowia_keelungensis                             Seq_1684
+    2.6e-13   43.9   0.0    5.3e-13   42.9   0.0    1.6  1  yHMPu5000035044_Barnettozyma_californica          Seq_4673
+      3e-13   43.7   0.4    9.8e-13   42.0   0.4    2.0  1  Saccharomyces_cerevisiae                          YFR034C
+    3.1e-13   43.6   0.3    6.8e-13   42.5   0.3    1.6  1  yHMPu5000035325_Cyberlindnera_petersonii          Seq_5245
+    3.3e-13   43.5   0.2    3.3e-13   43.5   0.2    2.0  1  Lachancea_fermentati                              Seq_781
+    3.3e-13   43.5   0.6    7.9e-13   42.3   0.6    1.7  1  Naumovozyma_castellii                             Seq_4817
+    3.4e-13   43.5   0.5    5.7e-13   42.8   0.5    1.4  1  Wickerhamiella_domercqiae                         Seq_2440
+    3.5e-13   43.4   1.0    6.7e-13   42.6   1.0    1.5  1  yHMPu5000034760_Lipomyces_kononenkoae             Seq_6722
+    3.7e-13   43.4   0.4      7e-13   42.5   0.4    1.5  1  Wickerhamomyces_ciferrii                          Seq_497
+    3.7e-13   43.4   0.2      9e-13   42.2   0.2    1.7  1  yHMPu5000035654_Tortispora_ganteri                Seq_2953
+    3.7e-13   43.4   0.3    7.6e-13   42.4   0.3    1.6  1  yHMPu5000034918_Nakazawaea_holstii                Seq_870
+    4.1e-13   43.3   0.3    4.1e-13   43.3   0.3    2.9  1  yHMPu5000041818_Magnusiomyces_tetrasperma         Seq_4352
+    4.6e-13   43.1   0.0    8.4e-13   42.3   0.0    1.5  1  yHMPu5000035045_Barnettozyma_hawaiiensis          Seq_3879
+    4.7e-13   43.1   0.8    9.2e-13   42.1   0.8    1.5  1  yHMPu5000034748_Lipomyces_oligophaga              Seq_2488
+    5.1e-13   42.9   2.2    6.4e-13   42.6   0.6    2.0  1  Hanseniaspora_valbyensis                          Seq_359
+    5.2e-13   42.9   0.4    1.2e-12   41.8   0.4    1.6  1  Eremothecium_coryli                               Seq_3183
+    5.3e-13   42.9   0.0    1.1e-12   41.9   0.0    1.6  1  yHMPu5000035046_Barnettozyma_populi               Seq_1141
+    5.4e-13   42.9   0.6    1.1e-12   41.8   0.6    1.6  1  yHMPu5000034742_Lipomyces_suomiensis              Seq_2553
+    5.6e-13   42.8   0.4    1.6e-12   41.3   0.4    1.9  1  yHMPu5000034865_Zygosaccharomyces_kombuchaensis   Seq_1266
+    5.8e-13   42.8   0.3    5.8e-13   42.8   0.3    2.0  1  Lachancea_cidri                                   Seq_591
+    6.2e-13   42.7   1.4    1.1e-12   41.8   1.4    1.5  1  yHMPu5000034875_Tetrapisispora_fleetii            Seq_5497
+    6.7e-13   42.5   0.8    1.2e-12   41.7   0.8    1.5  1  yHMPu5000034754_Lipomyces_arxii                   Seq_1969
+    6.8e-13   42.5   0.8    1.3e-12   41.7   0.8    1.5  1  yHMPu5000034749_Lipomyces_mesembrius              Seq_3002
+    6.8e-13   42.5   0.8    1.2e-12   41.7   0.8    1.4  1  Lipomyces_starkeyi                                Seq_258
+    8.3e-13   42.3   0.1    1.9e-12   41.1   0.1    1.7  1  Lachancea_thermotolerans                          Seq_2539
+    8.6e-13   42.2   0.6    1.7e-12   41.3   0.6    1.5  1  Arxula_adeninivorans                              Seq_26
+    8.9e-13   42.2   1.3    1.6e-12   41.4   0.2    2.0  1  yHMPu5000034671_Blastobotrys_peoriensis           Seq_1760
+    8.9e-13   42.2   0.6    1.7e-12   41.2   0.6    1.5  1  yHMPu5000034669_Blastobotrys_raffinofermentans    Seq_1436
+    1.1e-12   41.9   0.5    5.8e-12   39.6   0.1    2.3  1  yHMPu5000035689_Candida_mycetangii                Seq_1349
+    1.1e-12   41.8   0.1    2.3e-12   40.9   0.1    1.6  1  Nakazawaea_peltata                                Seq_864
+    1.1e-12   41.8   0.0    3.5e-12   40.3   0.0    1.9  1  yHMPu5000034758_Lipomyces_japonicus               Seq_2614
+    1.2e-12   41.8   0.1    1.2e-12   41.8   0.1    1.9  1  yHMPu5000034862_Zygotorulaspora_florentina        Seq_3527
+    1.4e-12   41.5   0.1    2.5e-12   40.7   0.1    1.4  1  Meyerozyma_guilliermondii                         Seq_3330
+    1.4e-12   41.5   0.1    2.5e-12   40.7   0.1    1.4  1  yHMPu5000035662_Meyerozyma_caribbica              Seq_3810
+    1.4e-12   41.5   0.1    2.5e-12   40.7   0.1    1.4  1  Candida_carpophila                                Seq_2966
+    1.5e-12   41.5   1.8    1.5e-12   41.5   1.8    2.0  1  yHMPu5000034877_Tetrapisispora_namnaonensis       Seq_2368
+    1.5e-12   41.5   0.1    4.8e-12   39.8   0.1    2.0  1  yHMPu5000035274_Wickerhamomyces_alni              Seq_298
+    1.5e-12   41.5   0.3    3.8e-12   40.2   0.3    1.8  1  yHMPu5000034757_Lipomyces_doorenjongii            Seq_1317
+    1.5e-12   41.4   0.2    3.2e-12   40.4   0.2    1.6  1  yHMPu5000035658_Starmera_amethionina              Seq_1406
+    1.6e-12   41.3   0.2    3.4e-12   40.3   0.2    1.6  1  Coccidioides_immitis                              Seq_4034
+    1.8e-12   41.2   0.1    1.8e-12   41.2   0.1    1.8  1  Lachancea_quebecensis                             Seq_2223
+    1.9e-12   41.1   2.4    3.5e-12   40.3   2.4    1.5  1  Tetrapisispora_phaffii                            Seq_2761
+    1.9e-12   41.1   0.0    5.6e-12   39.6   0.0    1.9  1  yHMPu5000035688_Cyberlindnera_xylosilytica        Seq_4356
+      2e-12   41.0   0.3    4.8e-12   39.8   0.3    1.7  1  Candida_orthopsilosis                             Seq_3735
+    2.1e-12   41.0   0.3      4e-12   40.1   0.3    1.5  1  Lachancea_mirantina                               Seq_3050
+    2.2e-12   40.9   1.3      4e-12   40.1   0.2    2.1  1  Saccharomyces_kudriavzevii                        Seq_2134
+    2.3e-12   40.8   0.0      1e-11   38.7   0.0    2.2  1  Sclerotinia_sclerotiorum                          Seq_6672
+    2.7e-12   40.6   0.1    5.1e-12   39.7   0.1    1.5  1  yHMPu5000034988_Candida_fructus                   Seq_975
+    2.8e-12   40.6   0.4    5.9e-12   39.5   0.4    1.6  1  yHMPu5000034761_Lipomyces_lipofer                 Seq_5526
+    2.9e-12   40.5   0.1    6.3e-12   39.4   0.1    1.6  1  Wickerhamomyces_anomalus                          Seq_284
+      3e-12   40.5   0.3    5.2e-12   39.7   0.3    1.4  1  Kuraishia_capsulata                               Seq_3298
+    3.1e-12   40.4   0.0      1e-11   38.8   0.0    2.0  1  Botrytis_cinerea                                  Seq_16036
+    3.2e-12   40.4   0.2    8.6e-12   39.0   0.2    1.8  1  yHMPu5000035667_Kurtzmaniella_cleridarum          Seq_2706
+    3.3e-12   40.3   0.4    9.2e-12   38.9   0.1    2.0  1  yHMPu5000035268_Wickerhamomyces_hampshirensis     Seq_4068
+    3.5e-12   40.3   0.0    7.8e-12   39.1   0.0    1.7  1  yHMPu5000034655_Botryozyma_nematodophila          Seq_10886
+    3.5e-12   40.3   0.0    7.5e-12   39.2   0.0    1.6  1  Wickerhamia_fluorescens                           Seq_3798
+    3.8e-12   40.2   0.0    1.4e-11   38.3   0.0    2.0  1  yHMPu5000034670_Blastobotrys_proliferans          Seq_6592
+    3.9e-12   40.1   1.0      1e-11   38.8   1.0    1.8  1  Vanderwaltozyma_polyspora                         Seq_2111
+    4.1e-12   40.1   1.5    7.2e-12   39.3   1.5    1.4  1  Starmerella_bombicola_JCM9596                     Seq_564
+    4.4e-12   39.9   2.1    4.4e-12   39.9   2.1    1.9  1  yHAB154_Kazachstania_transvaalensis               Seq_4184
+    4.5e-12   39.9   0.5    9.6e-12   38.9   0.5    1.6  1  yHMPu5000034866_Zygosaccharomyces_bisporus        Seq_1427
+    4.5e-12   39.9   0.1      9e-12   38.9   0.1    1.5  1  yHMPu5000034883_Peterozyma_xylosa                 Seq_1417
+    4.5e-12   39.9   0.1      9e-12   38.9   0.1    1.5  1  Lachancea_fantastica                              Seq_2711
+    5.1e-12   39.7   0.1    9.9e-12   38.8   0.1    1.5  1  yHMPu5000034884_Peterozyma_toletana               Seq_2331
+    5.4e-12   39.7   0.2    1.2e-11   38.5   0.2    1.7  1  yHMPu5000035679_Candida_rhagii                    Seq_4670
+    5.4e-12   39.6   0.2    1.2e-11   38.5   0.2    1.6  1  yHMPu5000035318_Hyphopichia_heimii                Seq_5051
+    5.5e-12   39.6   0.2    1.5e-11   38.2   0.2    1.8  1  Lachancea_kluyveri                                Seq_4959
+    5.6e-12   39.6   0.2    1.1e-11   38.6   0.2    1.6  1  yHMPu5000034901_Ogataea_methylivora               Seq_3351
+    6.1e-12   39.5   0.6    2.5e-11   37.5   0.1    2.4  1  yHMPu5000035687_Cyberlindnera_suaveolens          Seq_2196
+    6.5e-12   39.4   0.6    2.5e-11   37.5   0.1    2.3  1  yHMPu5000035686_Cyberlindnera_saturnus            Seq_5238
+    6.7e-12   39.4   0.6    2.5e-11   37.5   0.1    2.3  1  yHMPu5000034978_Cyberlindnera_mrakii              Seq_1303
+    6.9e-12   39.3   0.1    1.9e-11   37.9   0.1    1.8  1  Tetrapisispora_blattae                            Seq_2142
+      7e-12   39.3   0.6    1.5e-11   38.2   0.6    1.6  1  Zygosaccharomyces_bailii                          Seq_1667
+    7.1e-12   39.3   0.2    2.9e-11   37.3   0.0    2.0  1  yHMPu5000035031_Candida_kruisii                   Seq_4120
+    7.1e-12   39.3   0.2    1.6e-11   38.2   0.2    1.6  1  yHMPu5000035681_Candida_gotoi                     Seq_1987
+    7.2e-12   39.3   0.1    7.2e-12   39.3   0.1    2.1  1  yHMPu5000034624_Pichia_nakasei                    Seq_2417
+    7.2e-12   39.2   2.1    8.5e-11   35.8   1.3    2.5  1  Dekkera_bruxellensis                              Seq_3692
+    7.2e-12   39.2   0.2    1.3e-11   38.4   0.2    1.5  1  Lachancea_nothofagi                               Seq_3385
+    7.6e-12   39.2   0.1    1.9e-11   37.9   0.1    1.7  1  yHMPu5000041863_Candida_gorgasii                  Seq_4889
+    8.1e-12   39.1   0.4    1.8e-11   38.0   0.4    1.6  1  Candida_auris                                     Seq_4418
+    8.2e-12   39.1   0.3    1.7e-11   38.1   0.3    1.5  1  yHMPu5000041840_Candida_wancherniae               Seq_1932
+    8.6e-12   39.0   0.1    1.8e-11   38.0   0.1    1.6  1  yHMPu5000035297_Priceomyces_castillae             Seq_21
+    8.6e-12   39.0   0.1      2e-11   37.9   0.1    1.7  1  yHMPu5000035335_Candida_blattae                   Seq_4955
+    8.6e-12   39.0   0.3    1.8e-11   38.0   0.3    1.6  1  Stagonospora_nodorum                              Seq_5953
+    8.7e-12   39.0   0.3      2e-11   37.8   0.3    1.7  1  Lachancea_dasiensis                               Seq_3044
+    8.7e-12   39.0   0.0    1.6e-11   38.1   0.0    1.5  1  Sugiyamaella_lignohabitans                        Seq_4672
+    9.1e-12   38.9   0.1    1.9e-11   37.9   0.1    1.6  1  yHMPu5000034973_Danielozyma_ontarioensis          Seq_2228
+    9.2e-12   38.9   0.1    2.3e-11   37.6   0.1    1.8  1  yHMPu5000034614_Saturnispora_silvae               Seq_1468
+    9.3e-12   38.9   0.7    1.9e-11   37.9   0.7    1.6  1  Metschnikowia_kipukae                             Seq_2903
+    9.5e-12   38.9   0.5    9.5e-12   38.9   0.5    2.0  1  Pachysolen_tannophilus                            Seq_3669
+    9.6e-12   38.9   0.0    1.9e-11   37.9   0.0    1.5  1  yHMPu5000035296_Priceomyces_carsonii              Seq_716
+    9.8e-12   38.8   0.1    2.3e-11   37.6   0.1    1.7  1  yHMPu5000034612_Saturnispora_saitoi               Seq_600
+      1e-11   38.8   0.1    2.1e-11   37.8   0.1    1.6  1  yHMPu5000041833_Candida_tammaniensis              Seq_3404
+      1e-11   38.8   0.1    2.2e-11   37.7   0.1    1.6  1  yHMPu5000034597_Candida_stellimalicola            Seq_2692
+      1e-11   38.8   0.1    2.3e-11   37.7   0.1    1.6  1  Candida_sojae                                     Seq_2675
+    1.1e-11   38.7   0.2    2.3e-11   37.7   0.2    1.6  1  yHMPu5000035651_Torulaspora_microellipsoides      Seq_3381
+    1.1e-11   38.6   0.2    2.9e-11   37.3   0.2    1.8  1  yHMPu5000035639_Wickerhamomyces_canadensis        Seq_3381
+    1.2e-11   38.6   0.3    4.2e-11   36.8   0.3    2.0  1  yHMPu5000034967_Candida_freyschussii              Seq_3989
+    1.2e-11   38.6   0.4    5.8e-11   36.4   0.0    2.2  1  yHMPu5000034646_Wickerhamiella_cacticola          Seq_2818
+    1.2e-11   38.6   0.1    2.6e-11   37.5   0.1    1.6  1  Lachancea_meyersii                                Seq_716
+    1.2e-11   38.6   0.3    2.4e-11   37.6   0.3    1.6  1  yHMPu5000041678_Debaryomyces_prosopidis           Seq_2184
+    1.2e-11   38.5   0.6      3e-11   37.3   0.6    1.7  1  yHMPu5000041743_Candida_hawaiiana                 Seq_4814
+    1.2e-11   38.5   0.3    2.2e-11   37.7   0.3    1.5  1  yHMPu5000026152_Torulaspora_franciscae            Seq_2615
+    1.2e-11   38.5   0.2      3e-11   37.3   0.2    1.7  1  yHMPu5000035286_Candida_azyma                     Seq_325
+    1.2e-11   38.5   0.3    2.4e-11   37.6   0.3    1.5  1  yHMPu5000041829_Debaryomyces_fabryi               Seq_1202
+    1.3e-11   38.4   0.0    2.5e-11   37.5   0.0    1.5  1  Candida_tanzawaensis                              Seq_690
+    1.4e-11   38.4   0.3    2.7e-11   37.4   0.3    1.5  1  Debaryomyces_hansenii                             Seq_1023
+    1.4e-11   38.4   0.1      3e-11   37.3   0.1    1.6  1  yHMPu5000034632_Candida_athensensis               Seq_3509
+    1.4e-11   38.4   0.3    2.6e-11   37.5   0.3    1.5  1  yHMPu5000041824_Debaryomyces_subglobosus          Seq_214
+    1.4e-11   38.3   0.4    3.2e-11   37.2   0.4    1.7  1  Candida_parapsilosis                              Seq_4182
+    1.4e-11   38.3   0.1    1.4e-11   38.3   0.1    1.9  1  Brettanomyces_anomalus                            Seq_1971
+    1.4e-11   38.3   0.1      3e-11   37.3   0.1    1.6  1  yHMPu5000034605_Spencermartinsiella_europaea      Seq_4190
+    1.5e-11   38.3   0.0    3.3e-11   37.1   0.0    1.7  1  yHMPu5000034606_Priceomyces_medius                Seq_1575
+    1.6e-11   38.2   1.4    4.9e-11   36.6   0.1    2.2  1  yHMPu5000035707_Candida_heveicola                 Seq_1294
+    1.7e-11   38.1   0.1    3.6e-11   37.0   0.1    1.6  1  Cyberlindnera_jadinii                             Seq_4575
+    1.7e-11   38.1   0.0    3.7e-11   37.0   0.0    1.6  1  yHMPu5000035018_Candida_canberraensis             Seq_2258
+    1.7e-11   38.1   0.1    3.5e-11   37.0   0.1    1.6  1  yHMPu5000041862_Candida_golubevii                 Seq_4904
+    1.7e-11   38.0   0.0    4.3e-11   36.8   0.0    1.7  1  yHMPu5000035252_Yamadazyma_nakazawae              Seq_1039
+    1.7e-11   38.0   0.1    3.1e-11   37.2   0.1    1.5  1  yHMPu5000035652_Torulaspora_maleeae               Seq_374
+    1.7e-11   38.0   0.1    4.3e-11   36.8   0.1    1.8  1  Hyphopichia_burtonii                              Seq_5158
+    1.8e-11   38.0   2.9    2.2e-11   37.7   0.7    2.4  1  Metschnikowia_arizonensis                         Seq_3036
+    1.9e-11   37.9   0.1      4e-11   36.9   0.1    1.6  1  yHMPu5000035033_Candida_cretensis                 Seq_1169
+      2e-11   37.8   0.2    4.3e-11   36.8   0.2    1.6  1  yHMPu5000041693_Debaryomyces_nepalensis           Seq_2903
+      2e-11   37.8   0.9    4.6e-11   36.7   0.9    1.7  1  yHMPu5000034932_Kuraishia_ogatae                  Seq_1434
+    2.1e-11   37.8   0.2    4.9e-11   36.6   0.2    1.7  1  yHMPu5000035659_Saturnispora_dispora              Seq_2703
+    2.1e-11   37.7   0.2    3.9e-11   36.9   0.2    1.5  1  yHMPu5000035243_Zygoascus_meyerae                 Seq_954
+    2.2e-11   37.7   0.4    5.6e-11   36.4   0.4    1.7  1  Candida_intermedia                                Seq_2163
+    2.2e-11   37.7   0.1    5.4e-11   36.5   0.1    1.7  1  yHMPu5000034654_Aciculoconidium_aculeatum         Seq_2033
+    2.3e-11   37.6   0.0    4.9e-11   36.6   0.0    1.6  1  yHMPu5000034665_Kodamaea_laetipori                Seq_4275
+    2.3e-11   37.6   0.2    5.3e-11   36.5   0.2    1.7  1  yHMPu5000034610_Saturnispora_hagleri              Seq_3791
+    2.3e-11   37.6   1.6    3.9e-11   36.9   0.2    2.2  1  yHMPu5000034674_Blastobotrys_muscicola            Seq_6644
+    2.3e-11   37.6   0.2    6.8e-11   36.1   0.2    1.9  1  yHMPu5000034899_Ogataea_kodamae                   Seq_3231
+    2.4e-11   37.6   0.2    5.3e-11   36.5   0.2    1.6  1  yHMPu5000034613_Saturnispora_serradocipensis      Seq_800
+    2.4e-11   37.6   0.1    4.8e-11   36.6   0.1    1.5  1  Lachancea_lanzarotensis                           Seq_769
+    2.6e-11   37.4   0.4    6.4e-11   36.2   0.4    1.7  1  Metschnikowia_hibisci                             Seq_4176
+    2.7e-11   37.4   0.1    2.7e-11   37.4   0.1    1.9  1  Candida_albicans                                  C4_05680W_A
+    2.8e-11   37.4   0.0    6.2e-11   36.3   0.0    1.7  1  yHMPu5000035641_Yamadazyma_scolyti                Seq_2623
+    2.8e-11   37.4   0.1    2.8e-11   37.4   0.1    2.4  1  yHMPu5000035699_Cyberlindnera_maclurae            Seq_956
+    2.9e-11   37.3   0.4      6e-11   36.3   0.4    1.6  1  Kluyveromyces_marxianus                           Seq_2858
+    2.9e-11   37.3   0.0      6e-11   36.3   0.0    1.6  1  Scheffersomyces_stipitis                          Seq_5549
+      3e-11   37.3   0.9    6.6e-11   36.2   0.9    1.6  1  yHAB148_Kazachstania_intestinalis                 Seq_1739
+      3e-11   37.3   0.9    6.2e-11   36.3   0.9    1.6  1  Nakaseomyces_bracarensis                          Seq_2715
+      3e-11   37.3   0.1    5.9e-11   36.3   0.1    1.5  1  Scheffersomyces_lignosus                          Seq_4492
+    3.1e-11   37.2   0.0    8.3e-11   35.9   0.0    1.8  1  Lodderomyces_elongisporus                         Seq_2935
+    3.2e-11   37.2   0.1    8.8e-11   35.8   0.1    1.9  1  yHMPu5000034892_Ogataea_pilisensis                Seq_229
+    3.2e-11   37.2   0.9    9.1e-11   35.7   0.9    1.9  1  Metschnikowia_borealis                            Seq_1150
+    3.2e-11   37.2   0.6    7.7e-11   36.0   0.6    1.7  1  Metschnikowia_shivogae                            Seq_4251
+    3.3e-11   37.1   0.1    8.1e-11   35.9   0.1    1.7  1  yHMPu5000034611_Saturnispora_mendoncae            Seq_1186
+    3.4e-11   37.1   1.0      8e-11   35.9   1.0    1.7  1  Metschnikowia_hawaiiensis                         Seq_4726
+    3.4e-11   37.1   0.6    7.7e-11   36.0   0.6    1.7  1  Metschnikowia_aberdeeniae                         Seq_2593
+    3.4e-11   37.1   0.9      9e-11   35.7   0.9    1.8  1  Metschnikowia_santaceciliae                       Seq_5591
+    3.4e-11   37.1   1.2    3.4e-11   37.1   1.2    2.0  1  Candida_succiphila                                Seq_67
+    3.5e-11   37.1   0.1    7.1e-11   36.1   0.1    1.6  1  yHMPu5000034643_Candida_schatavii                 Seq_4140
+    3.5e-11   37.1   0.9    8.4e-11   35.8   0.9    1.7  1  Metschnikowia_matae                               Seq_5397
+    3.5e-11   37.1   0.9    9.3e-11   35.7   0.9    1.8  1  Metschnikowia_cerradonensis                       Seq_6047
+    3.5e-11   37.0   0.9    9.1e-11   35.7   0.9    1.8  1  Metschnikowia_continentalis                       Seq_4548
+    3.6e-11   37.0   0.3    7.7e-11   36.0   0.3    1.6  1  yHMPu5000034681_Blastobotrys_americana            Seq_3962
+    3.6e-11   37.0   0.9      8e-11   35.9   0.9    1.6  1  Metschnikowia_matae_maris                         Seq_161
+    3.6e-11   37.0   0.9    8.9e-11   35.8   0.9    1.7  1  Metschnikowia_ipomoeae                            Seq_905
+    3.7e-11   37.0   0.9    9.1e-11   35.7   0.9    1.7  1  Metschnikowia_lockheadii                          Seq_6142
+    4.1e-11   36.8   0.1    1.2e-10   35.3   0.1    1.9  1  yHMPu5000034607_Saccharomycopsis_capsularis       Seq_450
+    4.3e-11   36.8   0.1      1e-10   35.5   0.1    1.7  1  Torulaspora_delbrueckii                           Seq_922
+    4.3e-11   36.8   0.1    9.3e-11   35.7   0.1    1.6  1  Zygosaccharomyces_rouxii                          Seq_3084
+    4.5e-11   36.7   0.1    1.1e-10   35.4   0.1    1.8  1  yHMPu5000035691_Candida_salmanticensis            Seq_1937
+    4.7e-11   36.7   0.0    9.2e-11   35.7   0.0    1.5  1  yHMPu5000035677_Kodamaea_ohmeri                   Seq_4955
+    4.7e-11   36.6   0.2    9.1e-11   35.7   0.2    1.5  1  Millerozyma_acaciae                               Seq_3052
+    4.7e-11   36.6   0.2    9.9e-11   35.6   0.2    1.6  1  yHMPu5000041855_Candida_ascalaphidarum            Seq_65
+      5e-11   36.6   0.0    9.9e-11   35.6   0.0    1.5  1  yHMPu5000035022_Candida_emberorum                 Seq_2558
+      5e-11   36.6   0.1    1.1e-10   35.5   0.1    1.6  1  Candida_homilentoma                               Seq_3220
+      5e-11   36.6   0.0      1e-10   35.6   0.0    1.5  1  yHMPu5000034648_Candida_restingae                 Seq_3848
+    5.1e-11   36.5   0.2    5.1e-11   36.5   0.2    1.9  1  yHMPu5000034891_Ogataea_pini                      Seq_1702
+    5.8e-11   36.4   0.4    1.1e-10   35.4   0.4    1.5  1  Kluyveromyces_lactis                              Seq_2254
+    5.9e-11   36.3   0.0    2.1e-10   34.6   0.0    2.0  1  Priceomyces_haplophilus                           Seq_2024
+      6e-11   36.3   0.2    1.4e-10   35.1   0.2    1.7  1  yHMPu5000034615_Saturnispora_zaruensis            Seq_518
+      6e-11   36.3   0.9    1.2e-10   35.3   0.9    1.5  1  Nakaseomyces_delphensis                           Seq_1301
+      6e-11   36.3   0.0    1.2e-10   35.3   0.0    1.6  1  yHMPu5000034986_Candida_oregonensis               Seq_1373
+    6.2e-11   36.3   0.1    1.3e-10   35.2   0.1    1.6  1  yHMPu5000035032_Candida_gatunensis                Seq_1600
+    6.6e-11   36.2   0.0    1.2e-10   35.3   0.0    1.5  1  yHMPu5000041822_Dipodascus_geniculatus            Seq_3505
+    6.7e-11   36.2   0.1    2.9e-10   34.1   0.1    2.2  1  Saccharomyces_mikatae                             Seq_1248
+    7.1e-11   36.1   0.7    7.1e-11   36.1   0.7    2.0  1  Metschnikowia_hamakuensis                         Seq_1121
+    7.5e-11   36.0   0.0    1.5e-10   35.0   0.0    1.6  1  yHMPu5000034623_Pichia_norvegensis                Seq_3980
+    7.6e-11   36.0   0.6    1.8e-10   34.8   0.6    1.7  1  yHAB133_Kazachstania_unispora                     Seq_5243
+      8e-11   35.9   0.3    1.8e-10   34.8   0.3    1.6  1  yHMPu5000041713_Debaryomyces_maramus              Seq_2176
+    8.2e-11   35.9   0.0    2.1e-10   34.6   0.0    1.8  1  Saccharomycopsis_malanga                          Seq_3751
+    8.2e-11   35.9   0.4    1.6e-10   34.9   0.4    1.5  1  yHMPu5000034710_Kluyveromyces_dobzhanskii         Seq_4777
+    9.2e-11   35.7   0.7    9.2e-11   35.7   0.7    2.5  1  Metschnikowia_mauinuiana                          Seq_3150
+    9.5e-11   35.7   0.2    2.3e-10   34.5   0.2    1.7  1  Candida_arabinofermentans                         Seq_3116
+      1e-10   35.6   0.4    2.2e-10   34.5   0.4    1.6  1  yHMPu5000034893_Ogataea_philodendra               Seq_2113
+      1e-10   35.5   0.0      2e-10   34.6   0.0    1.5  1  Candida_tenuis                                    Seq_1448
+    1.1e-10   35.5   0.0    9.3e-10   32.5   0.0    2.5  1  Babjeviella_inositovora                           Seq_3850
+    1.1e-10   35.5   1.2    2.4e-10   34.4   0.5    2.1  1  Metschnikowia_kamakouana                          Seq_49
+    1.2e-10   35.4   0.4    2.5e-10   34.3   0.4    1.6  1  yHMPu5000034890_Ogataea_ramenticola               Seq_5296
+    1.2e-10   35.4   0.7    1.9e-10   34.7   0.7    1.3  1  Candida_versatilis                                Seq_101
+    1.2e-10   35.3   0.1    2.8e-10   34.2   0.1    1.7  1  yHMPu5000035690_Candida_vartiovaarae              Seq_3664
+    1.3e-10   35.3   0.0    2.3e-10   34.4   0.0    1.5  1  Spathaspora_girioi                                Seq_2929
+    1.3e-10   35.3   0.2    2.8e-10   34.2   0.2    1.6  1  yHMPu5000035040_Ambrosiozyma_maleeae              Seq_2831
+    1.4e-10   35.1   0.0    3.6e-10   33.8   0.0    1.8  1  yHMPu5000034636_Ogataea_nitratoaversa             Seq_4986
+    1.5e-10   35.0   1.6    4.3e-10   33.6   0.7    2.3  1  yHMPu5000034902_Ogataea_minuta                    Seq_3720
+    1.6e-10   35.0   1.1    3.6e-10   33.8   1.1    1.7  1  Candida_boidinii_JCM9604                          Seq_2641
+    1.6e-10   34.9   0.1    3.3e-10   33.9   0.1    1.6  1  yHMPu5000034999_Cephaloascus_fragrans             Seq_4993
+    1.7e-10   34.9   0.1    5.8e-10   33.1   0.1    2.1  1  yHMPu5000034990_Candida_corydali                  Seq_2889
+    1.8e-10   34.8   0.2    3.8e-10   33.7   0.2    1.6  1  yHMPu5000034903_Ogataea_naganishii                Seq_368
+    1.8e-10   34.8   0.1      3e-10   34.1   0.1    1.4  1  Metschnikowia_bicuspidata                         Seq_3844
+    1.8e-10   34.8   0.1    3.2e-10   34.0   0.1    1.4  1  yHMPu5000035047_Barnettozyma_pratensis            Seq_5836
+    1.8e-10   34.8   0.4    6.8e-10   32.9   0.4    2.1  1  Ogataea_methanolica                               Seq_443
+    1.9e-10   34.7   0.1      5e-10   33.4   0.1    1.8  1  Candida_sorboxylosa                               Seq_2721
+      2e-10   34.6   0.0    4.5e-10   33.5   0.0    1.6  1  yHMPu5000034661_Dipodascus_albidus                Seq_4777
+    2.1e-10   34.6   1.4    2.1e-10   34.6   1.4    1.9  1  Naumovozyma_dairenensis                           Seq_2404
+    2.1e-10   34.5   0.0    4.1e-10   33.6   0.0    1.5  1  Spathaspora_gorwiae                               Seq_3034
+    2.3e-10   34.4   0.1    6.6e-10   33.0   0.1    1.9  1  yHMPu5000035242_Zygoascus_ofunaensis              Seq_2156
+    2.4e-10   34.4   0.3    5.9e-10   33.1   0.3    1.7  1  yHMPu5000034622_Pichia_occidentalis               Seq_446
+    2.4e-10   34.4   0.9    2.4e-10   34.4   0.9    1.9  1  Metschnikowia_proteae                             Seq_4138
+    2.4e-10   34.4   0.1    7.5e-10   32.8   0.1    1.9  1  yHMPu5000026197_Brettanomyces_custersianus        Seq_4654
+    2.4e-10   34.4   0.0    4.4e-10   33.5   0.0    1.4  1  Spathaspora_arborariae                            Seq_3170
+    2.5e-10   34.3   0.9    2.5e-10   34.3   0.9    1.9  1  Metschnikowia_drakensbergensis                    Seq_614
+    2.5e-10   34.3   0.2    7.3e-10   32.8   0.2    1.9  1  yHMPu5000034660_Diddensiella_caesifluorescens     Seq_1681
+    2.7e-10   34.2   0.8    5.9e-10   33.1   0.8    1.6  1  yHAB159_Kazachstania_solicola                     Seq_3709
+    2.7e-10   34.2   0.3    2.7e-10   34.2   0.3    2.7  1  Ogataea_polymorpha                                Seq_576
+    2.8e-10   34.2   0.3    2.8e-10   34.2   0.3    2.4  1  Ogataea_parapolymorpha                            Seq_1221
+    2.9e-10   34.1   0.0      6e-10   33.1   0.0    1.6  1  yHMPu5000035640_Yamadazyma_philogaea              Seq_3341
+      3e-10   34.1   0.6    6.5e-10   33.0   0.6    1.6  1  Metschnikowia_similis                             Seq_634
+    3.2e-10   34.0   0.6    6.9e-10   32.9   0.6    1.6  1  Metschnikowia_dekortum                            Seq_3333
+    3.3e-10   33.9   0.6    7.2e-10   32.8   0.6    1.6  1  Metschnikowia_bowlesiae                           Seq_1129
+    3.7e-10   33.8   1.0    7.9e-10   32.7   1.0    1.6  1  Nakaseomyces_nivariensis                          Seq_782
+      4e-10   33.7   0.8    9.2e-10   32.5   0.8    1.7  1  yHAB153_Kazachstania_rosinii                      Seq_4733
+      4e-10   33.7   0.2      4e-10   33.7   0.2    2.2  1  yHMPu5000034627_Pichia_heedii                     Seq_4640
+      4e-10   33.7   1.7    8.4e-10   32.6   0.3    2.3  1  yHMPu5000034904_Ogataea_nonfermentans             Seq_894
+    4.1e-10   33.6   0.2    7.2e-10   32.8   0.2    1.4  1  yHMPu5000034933_Kuraishia_molischiana             Seq_2912
+    4.1e-10   33.6   0.5      1e-09   32.4   0.5    1.7  1  yHAB132_Kazachstania_martiniae                    Seq_1043
+    4.3e-10   33.6   0.2    4.3e-10   33.6   0.2    2.1  1  yHMPu5000026256_Zygotorulaspora_mrakii            Seq_1749
+    4.6e-10   33.5   0.0    8.7e-10   32.6   0.0    1.5  1  yHMPu5000035037_Candida_montana                   Seq_639
+    4.7e-10   33.4   0.2    1.2e-09   32.2   0.2    1.7  1  yHAB158_Kazachstania_viticola                     Seq_621
+    5.1e-10   33.3   0.3    1.1e-09   32.3   0.3    1.6  1  yHMPu5000034887_Ogataea_trehaloabstinens          Seq_5371
+    5.2e-10   33.3   0.3    1.1e-09   32.2   0.3    1.6  1  yHMPu5000035041_Ambrosiozyma_pseudovanderkliftii  Seq_4591
+    5.9e-10   33.1   0.1    1.1e-09   32.2   0.1    1.5  1  yHMPu5000035048_Barnettozyma_salicaria            Seq_852
+      6e-10   33.1   0.3    1.2e-09   32.1   0.3    1.6  1  Ambrosiozyma_monospora                            Seq_1142
+    6.5e-10   33.0   1.5    1.3e-09   32.0   1.5    1.6  1  yHAB143_Kazachstania_siamensis                    Seq_2815
+    7.1e-10   32.9   0.1    1.6e-09   31.8   0.1    1.6  1  yHMPu5000026124_Ogataea_henricii                  Seq_194
+    7.2e-10   32.9   0.3    1.7e-09   31.6   0.3    1.7  1  Kazachstania_naganishii                           Seq_3985
+    7.8e-10   32.7   1.1    1.6e-09   31.7   1.1    1.6  1  yHAB160_Kazachstania_kunashirensis                Seq_3344
+    8.4e-10   32.6   0.1    1.9e-09   31.5   0.1    1.7  1  yHMPu5000034897_Ogataea_glucozyma                 Seq_131
+    8.7e-10   32.6   0.0    1.7e-09   31.6   0.0    1.6  1  yHMPu5000035670_Phaffomyces_opuntiae              Seq_104
+      9e-10   32.5   0.2    1.8e-09   31.5   0.2    1.6  1  Ambrosiozyma_kashinagacola                        Seq_4110
+      9e-10   32.5   0.0    1.8e-09   31.6   0.0    1.5  1  yHMPu5000035671_Phaffomyces_antillensis           Seq_3121
+    9.9e-10   32.4   1.1    2.2e-09   31.3   1.1    1.6  1  yHAB164_Kazachstania_aerobia                      Seq_378
+      1e-09   32.4   0.4      1e-09   32.4   0.4    2.4  1  yHMPu5000034886_Ogataea_trehalophila              Seq_1532
+      1e-09   32.4   0.0      2e-09   31.4   0.0    1.5  1  yHMPu5000035672_Phaffomyces_thermotolerans        Seq_1828
+    1.2e-09   32.2   0.1    2.3e-09   31.3   0.1    1.5  1  yHMPu5000035673_Candida_orba                      Seq_1681
+    1.2e-09   32.2   0.3    3.5e-09   30.7   0.3    1.9  1  yHMPu5000026145_Ambrosiozyma_vanderkliftii        Seq_3188
+    1.2e-09   32.1   0.5    2.5e-09   31.1   0.5    1.6  1  yHAB136_Kazachstania_bromeliacearum               Seq_1944
+    1.2e-09   32.1   0.1    2.6e-09   31.1   0.1    1.6  1  yHMPu5000034998_Cephaloascus_albidus              Seq_5656
+    1.3e-09   32.1   2.5    9.8e-09   29.2   0.0    3.2  1  yHMPu5000034631_Martiniozyma_abiesophila          Seq_7547
+    1.4e-09   31.9   0.2    3.4e-09   30.7   0.2    1.7  1  yHMPu5000034947_Ambrosiozyma_philentoma           Seq_3896
+    1.5e-09   31.8   0.2    3.5e-09   30.7   0.2    1.7  1  yHMPu5000034946_Ambrosiozyma_oregonensis          Seq_5507
+    1.6e-09   31.8   0.6    3.5e-09   30.7   0.6    1.6  1  yHMPu5000034709_Kluyveromyces_aestuarii           Seq_1252
+    1.6e-09   31.7   0.0    4.3e-09   30.4   0.0    1.8  1  yHMPu5000035301_Pichia_terricola                  Seq_3145
+    1.7e-09   31.7   0.2    1.7e-09   31.7   0.2    2.7  1  yHMPu5000034885_Ogataea_zsoltii                   Seq_5389
+    1.7e-09   31.6   0.2    3.6e-09   30.6   0.2    1.6  1  Candida_glabrata                                  Seq_3579
+    1.9e-09   31.5   0.0    3.5e-09   30.7   0.0    1.5  1  Spathaspora_hagerdaliae                           Seq_826
+    1.9e-09   31.5   0.3    1.9e-09   31.5   0.3    4.9  1  Pichia_membranifaciens                            Seq_2656
+    2.2e-09   31.3   0.5    6.3e-09   29.8   0.5    1.9  1  yHAB134_Kazachstania_turicensis                   Seq_278
+    3.4e-09   30.7   0.0    7.1e-09   29.7   0.0    1.6  1  Fusarium_graminearum                              Seq_4815
+    3.5e-09   30.7   1.3    1.1e-08   29.1   1.3    1.9  1  yHAB147_Kazachstania_taianensis                   Seq_2654
+      4e-09   30.5   0.2    1.1e-08   29.1   0.2    1.8  1  yHMPu5000026137_Ambrosiozyma_ambrosiae            Seq_844
+    8.9e-09   29.4   0.5    2.3e-08   28.0   0.2    1.9  1  Nakaseomyces_castellii                            Seq_3138
+      1e-08   29.1   2.7    1.2e-08   28.9   0.8    2.2  1  yHAB155_Kazachstania_spencerorum                  Seq_1180
+    1.9e-08   28.3   0.2    1.9e-08   28.3   0.2    2.2  1  yHMPu5000035674_Kregervanrija_delftensis          Seq_5567
+    3.1e-08   27.6   1.8    4.1e-08   27.2   0.2    2.2  1  yHMPu5000035675_Kregervanrija_fluxuum             Seq_54
+    1.5e-07   25.5   0.1    2.9e-07   24.5   0.1    1.5  1  yHMPu5000034637_Ogataea_populiabae                Seq_4363
+
+
+Domain annotation for each sequence:
+>> yHMPu5000035279_Tortispora_starmeri  Seq_4216
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.2   0.2   6.3e-16   6.4e-16       1      52 [.     493     544 ..     493     545 .. 0.98
+
+>> yHMPu5000035696_Hanseniaspora_singularis  Seq_3791
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.6   1.1   1.7e-14   1.7e-14       2      52 ..     476     528 ..     475     529 .. 0.93
+
+>> yHMPu5000035703_Cyberlindnera_americana  Seq_4595
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.6   0.2   1.5e-13   1.5e-13       1      53 []     359     413 ..     359     413 .. 0.91
+
+>> Hanseniaspora_vinae  Seq_405
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.0   0.1   5.5e-14   5.6e-14       2      52 ..     345     397 ..     344     398 .. 0.94
+
+>> yHMPu5000034876_Tetrapisispora_iriomotensis  Seq_3049
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.2   0.4     1e-13     1e-13       1      52 [.     447     500 ..     447     501 .. 0.95
+
+>> Arthrobotrys_oligospora  Seq_1079
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.3   0.5   9.4e-14   9.5e-14       1      53 []     537     598 ..     537     598 .. 0.96
+
+>> yHMPu5000035629_Yueomyces_sinensis  Seq_2096
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.2   0.7   9.6e-14   9.7e-14       1      52 [.     418     471 ..     418     472 .. 0.96
+
+>> yHMPu5000035650_Trigonopsis_variabilis  Seq_2373
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.1   0.3     1e-13   1.1e-13       1      53 []     450     501 ..     450     501 .. 0.96
+
+>> Tortispora_caseinolytica  Seq_4529
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.9   0.2   1.3e-13   1.3e-13       1      53 []     423     475 ..     423     475 .. 0.98
+
+>> yHMPu5000035633_Candida_hispaniensis  Seq_2017
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.7   0.2   1.4e-13   1.4e-13       1      53 []     566     616 ..     566     616 .. 0.98
+
+>> Candida_infanticola  Seq_2252
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.6   2.1   3.1e-13   3.2e-13       1      52 [.     402     451 ..     402     452 .. 0.96
+
+>> yHMPu5000034675_Blastobotrys_mokoenaii  Seq_2255
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.2   0.1     2e-13     2e-13       1      53 []     336     389 ..     336     389 .. 0.95
+
+>> yHMPu5000035665_Middelhovenomyces_tepae  Seq_5586
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3   0.7   1.9e-13   1.9e-13       1      53 []     470     520 ..     470     520 .. 0.98
+
+>> yHMPu5000035282_Trigonopsis_vinaria  Seq_570
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.3   2.2e-13   2.2e-13       1      53 []     547     598 ..     547     598 .. 0.96
+
+>> Cyberlindnera_fabianii_JCM3601  Seq_2209
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.2   7.3e-13   7.3e-13       1      53 []     482     536 ..     482     536 .. 0.96
+
+>> Eremothecium_gossypii  Seq_1428
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.1   0.3   1.1e-13   1.1e-13       1      53 []     338     392 ..     338     392 .. 0.95
+
+>> Ashbya_aceri  Seq_2153
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   0.1   2.5e-13   2.5e-13       1      53 []     347     401 ..     347     401 .. 0.95
+
+>> Aspergillus_nidulans  Seq_700
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.5   2.1e-13   2.2e-13       1      53 []     570     645 ..     570     645 .. 0.97
+
+>> yHMPu5000034667_Blastobotrys_serpentis  Seq_5876
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.8   0.1   2.8e-13   2.8e-13       1      53 []     323     376 ..     323     376 .. 0.97
+
+>> Eremothecium_cymbalariae  Seq_1326
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   0.1   2.5e-13   2.5e-13       1      53 []     520     574 ..     520     574 .. 0.94
+
+>> Eremothecium_sinecaudum  Seq_3674
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   1.3   5.5e-13   5.5e-13       1      53 []     435     489 ..     435     489 .. 0.90
+
+>> Saccharomyces_paradoxus  Seq_2173
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.4   5.7e-13   5.8e-13       1      53 []     253     309 ..     253     309 .. 0.98
+
+>> yHMPu5000035261_Candida_ponderosae  Seq_4621
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.7   0.5   2.9e-13     3e-13       1      53 []     436     490 ..     436     490 .. 0.96
+
+>> yHMPu5000035643_Yarrowia_bubula  Seq_6203
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.5   0.4   3.2e-13   3.3e-13       1      53 []     551     601 ..     551     601 .. 0.96
+
+>> Yarrowia_deformans  Seq_4637
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.3   0.4   3.8e-13   3.8e-13       1      53 []     636     686 ..     636     686 .. 0.96
+
+>> yHMPu5000035645_Yarrowia_divulgata  Seq_2097
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.3   0.4   3.8e-13   3.8e-13       1      53 []     629     679 ..     629     679 .. 0.96
+
+>> yHMPu5000034673_Blastobotrys_nivea  Seq_4071
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.5   0.0   1.7e-13   1.7e-13       1      53 []      21      73 ..      21      73 .. 0.98
+
+>> yHMPu5000034957_Hanseniaspora_osmophila  Seq_862
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   0.4   5.2e-13   5.3e-13       1      53 []     714     768 ..     714     768 .. 0.94
+
+>> Sporopachydermia_quercuum  Seq_4449
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.1   5.5e-13   5.5e-13       1      53 []     633     689 ..     633     689 .. 0.96
+
+>> Yarrowia_lipolytica  Seq_2989
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   0.4   3.7e-13   3.7e-13       1      53 []     620     670 ..     620     670 .. 0.96
+
+>> Neurospora_crassa  Seq_3724
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.0   8.2e-13   8.3e-13       1      53 []     646     736 ..     646     736 .. 0.92
+
+>> Yarrowia_keelungensis  Seq_1684
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   0.4   3.7e-13   3.7e-13       1      53 []     620     670 ..     620     670 .. 0.96
+
+>> yHMPu5000035044_Barnettozyma_californica  Seq_4673
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   0.0   5.2e-13   5.3e-13       1      52 [.     425     478 ..     425     479 .. 0.94
+
+>> Saccharomyces_cerevisiae  YFR034C
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.0   0.4   9.7e-13   9.8e-13       1      53 []     251     307 ..     251     307 .. 0.98
+
+>> yHMPu5000035325_Cyberlindnera_petersonii  Seq_5245
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.3   6.7e-13   6.8e-13       1      53 []     451     505 ..     451     505 .. 0.94
+
+>> Lachancea_fermentati  Seq_781
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.5   0.2   3.3e-13   3.3e-13       1      53 []      84     138 ..      84     138 .. 0.89
+
+>> Naumovozyma_castellii  Seq_4817
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.6   7.8e-13   7.9e-13       2      53 .]     333     386 ..     332     386 .. 0.92
+
+>> Wickerhamiella_domercqiae  Seq_2440
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.5   5.7e-13   5.7e-13       1      53 []     303     353 ..     303     353 .. 0.97
+
+>> yHMPu5000034760_Lipomyces_kononenkoae  Seq_6722
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.6   1.0   6.6e-13   6.7e-13       1      53 []     496     561 ..     496     561 .. 0.96
+
+>> Wickerhamomyces_ciferrii  Seq_497
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.4     7e-13     7e-13       1      53 []     472     526 ..     472     526 .. 0.90
+
+>> yHMPu5000035654_Tortispora_ganteri  Seq_2953
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.2   8.9e-13     9e-13       1      53 []     423     475 ..     423     475 .. 0.98
+
+>> yHMPu5000034918_Nakazawaea_holstii  Seq_870
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.4   0.3   7.5e-13   7.6e-13       1      53 []     495     549 ..     495     549 .. 0.91
+
+>> yHMPu5000041818_Magnusiomyces_tetrasperma  Seq_4352
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.3   0.3     4e-13   4.1e-13       1      53 []     902     952 ..     902     952 .. 0.98
+
+>> yHMPu5000035045_Barnettozyma_hawaiiensis  Seq_3879
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.0   8.3e-13   8.4e-13       1      52 [.     461     514 ..     461     515 .. 0.94
+
+>> yHMPu5000034748_Lipomyces_oligophaga  Seq_2488
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.1   0.8   9.1e-13   9.2e-13       1      53 []     532     599 ..     532     599 .. 0.88
+
+>> Hanseniaspora_valbyensis  Seq_359
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.6   0.6   6.3e-13   6.4e-13       1      52 [.     536     589 ..     536     590 .. 0.94
+
+>> Eremothecium_coryli  Seq_3183
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.4   1.2e-12   1.2e-12       1      53 []     447     501 ..     447     501 .. 0.94
+
+>> yHMPu5000035046_Barnettozyma_populi  Seq_1141
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.9   0.0   1.1e-12   1.1e-12       1      52 [.     458     511 ..     458     512 .. 0.94
+
+>> yHMPu5000034742_Lipomyces_suomiensis  Seq_2553
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.6   1.1e-12   1.1e-12       1      53 []     477     543 ..     477     543 .. 0.95
+
+>> yHMPu5000034865_Zygosaccharomyces_kombuchaensis  Seq_1266
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.3   0.4   1.6e-12   1.6e-12       1      53 []     384     438 ..     384     438 .. 0.94
+
+>> Lachancea_cidri  Seq_591
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.3   5.7e-13   5.8e-13       1      52 [.     413     466 ..     413     467 .. 0.89
+
+>> yHMPu5000034875_Tetrapisispora_fleetii  Seq_5497
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   1.4   1.1e-12   1.1e-12       1      53 []     468     522 ..     468     522 .. 0.93
+
+>> yHMPu5000034754_Lipomyces_arxii  Seq_1969
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.8   1.2e-12   1.2e-12       1      53 []     484     549 ..     484     549 .. 0.96
+
+>> yHMPu5000034749_Lipomyces_mesembrius  Seq_3002
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.8   1.3e-12   1.3e-12       1      53 []     501     566 ..     501     566 .. 0.96
+
+>> Lipomyces_starkeyi  Seq_258
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.8   1.2e-12   1.2e-12       1      53 []     476     541 ..     476     541 .. 0.96
+
+>> Lachancea_thermotolerans  Seq_2539
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.1   0.1   1.9e-12   1.9e-12       1      52 [.     404     457 ..     404     458 .. 0.90
+
+>> Arxula_adeninivorans  Seq_26
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.3   0.6   1.6e-12   1.7e-12       1      53 []     442     492 ..     442     492 .. 0.98
+
+>> yHMPu5000034671_Blastobotrys_peoriensis  Seq_1760
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.4   0.2   1.6e-12   1.6e-12       1      53 []     517     567 ..     517     567 .. 0.98
+
+>> yHMPu5000034669_Blastobotrys_raffinofermentans  Seq_1436
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.2   0.6   1.7e-12   1.7e-12       1      53 []     458     508 ..     458     508 .. 0.98
+
+>> yHMPu5000035689_Candida_mycetangii  Seq_1349
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.6   0.1   5.8e-12   5.8e-12       1      53 []     455     509 ..     455     509 .. 0.93
+
+>> Nakazawaea_peltata  Seq_864
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   0.1   2.2e-12   2.3e-12       1      53 []     543     597 ..     543     597 .. 0.97
+
+>> yHMPu5000034758_Lipomyces_japonicus  Seq_2614
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.3   0.0   3.5e-12   3.5e-12       1      53 []     532     613 ..     532     613 .. 0.92
+
+>> yHMPu5000034862_Zygotorulaspora_florentina  Seq_3527
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.1   1.1e-12   1.2e-12       1      52 [.     500     553 ..     500     554 .. 0.96
+
+>> Meyerozyma_guilliermondii  Seq_3330
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.1   2.5e-12   2.5e-12       1      52 [.     369     422 ..     369     423 .. 0.93
+
+>> yHMPu5000035662_Meyerozyma_caribbica  Seq_3810
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.1   2.5e-12   2.5e-12       1      52 [.     369     422 ..     369     423 .. 0.93
+
+>> Candida_carpophila  Seq_2966
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.1   2.5e-12   2.5e-12       1      52 [.     369     422 ..     369     423 .. 0.93
+
+>> yHMPu5000034877_Tetrapisispora_namnaonensis  Seq_2368
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.5   1.8   1.5e-12   1.5e-12       1      53 []     478     532 ..     478     532 .. 0.92
+
+>> yHMPu5000035274_Wickerhamomyces_alni  Seq_298
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   0.1   4.8e-12   4.8e-12       1      52 [.     470     523 ..     470     524 .. 0.94
+
+>> yHMPu5000034757_Lipomyces_doorenjongii  Seq_1317
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   0.3   3.7e-12   3.8e-12       1      53 []     443     508 ..     443     508 .. 0.95
+
+>> yHMPu5000035658_Starmera_amethionina  Seq_1406
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.4   0.2   3.2e-12   3.2e-12       1      52 [.     365     418 ..     365     419 .. 0.95
+
+>> Coccidioides_immitis  Seq_4034
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.3   0.2   3.4e-12   3.4e-12       1      53 []     565     647 ..     565     647 .. 0.98
+
+>> Lachancea_quebecensis  Seq_2223
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.2   0.1   1.8e-12   1.8e-12       1      52 [.     408     461 ..     408     462 .. 0.90
+
+>> Tetrapisispora_phaffii  Seq_2761
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.3   2.4   3.4e-12   3.5e-12       1      53 []     485     539 ..     485     539 .. 0.95
+
+>> yHMPu5000035688_Cyberlindnera_xylosilytica  Seq_4356
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.6   0.0   5.5e-12   5.6e-12       1      52 [.     442     495 ..     442     496 .. 0.95
+
+>> Candida_orthopsilosis  Seq_3735
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   0.3   4.8e-12   4.8e-12       1      52 [.     535     588 ..     535     589 .. 0.92
+
+>> Lachancea_mirantina  Seq_3050
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.1   0.3     4e-12     4e-12       1      53 []     409     463 ..     409     463 .. 0.92
+
+>> Saccharomyces_kudriavzevii  Seq_2134
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.1   0.2     4e-12     4e-12       1      53 []     255     311 ..     255     311 .. 0.98
+
+>> Sclerotinia_sclerotiorum  Seq_6672
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.7   0.0     1e-11     1e-11       1      53 []     530     611 ..     530     611 .. 0.97
+
+>> yHMPu5000034988_Candida_fructus  Seq_975
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   0.1   5.1e-12   5.1e-12       1      52 [.     347     400 ..     347     401 .. 0.95
+
+>> yHMPu5000034761_Lipomyces_lipofer  Seq_5526
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.5   0.4   5.9e-12   5.9e-12       1      52 [.     444     509 ..     444     510 .. 0.95
+
+>> Wickerhamomyces_anomalus  Seq_284
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.4   0.1   6.3e-12   6.3e-12       1      53 []     446     500 ..     446     500 .. 0.94
+
+>> Kuraishia_capsulata  Seq_3298
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   0.3   5.2e-12   5.2e-12       1      53 []     474     528 ..     474     528 .. 0.87
+
+>> Botrytis_cinerea  Seq_16036
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   0.0     1e-11     1e-11       1      53 []     563     644 ..     563     644 .. 0.96
+
+>> yHMPu5000035667_Kurtzmaniella_cleridarum  Seq_2706
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   0.2   8.5e-12   8.6e-12       1      52 [.     509     562 ..     509     563 .. 0.90
+
+>> yHMPu5000035268_Wickerhamomyces_hampshirensis  Seq_4068
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.9   0.1   9.1e-12   9.2e-12       1      52 [.     387     440 ..     387     441 .. 0.95
+
+>> yHMPu5000034655_Botryozyma_nematodophila  Seq_10886
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.1   0.0   7.8e-12   7.8e-12       1      53 []     309     363 ..     309     363 .. 0.93
+
+>> Wickerhamia_fluorescens  Seq_3798
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.0   7.4e-12   7.5e-12       1      53 []     597     651 ..     597     651 .. 0.91
+
+>> yHMPu5000034670_Blastobotrys_proliferans  Seq_6592
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   0.0   1.4e-11   1.4e-11       1      53 []     432     512 ..     432     512 .. 0.94
+
+>> Vanderwaltozyma_polyspora  Seq_2111
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   1.0   9.9e-12     1e-11       1      52 [.     527     580 ..     527     581 .. 0.91
+
+>> Starmerella_bombicola_JCM9596  Seq_564
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   1.5   7.1e-12   7.2e-12       1      53 []     313     365 ..     313     365 .. 0.96
+
+>> yHAB154_Kazachstania_transvaalensis  Seq_4184
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.9   2.1   4.4e-12   4.4e-12       1      52 [.      67     120 ..      67     121 .. 0.94
+
+>> yHMPu5000034866_Zygosaccharomyces_bisporus  Seq_1427
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.9   0.5   9.5e-12   9.6e-12       1      53 []     394     448 ..     394     448 .. 0.90
+
+>> yHMPu5000034883_Peterozyma_xylosa  Seq_1417
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.9   0.1   8.9e-12     9e-12       1      53 []     515     569 ..     515     569 .. 0.92
+
+>> Lachancea_fantastica  Seq_2711
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.9   0.1   8.9e-12     9e-12       1      52 [.     489     542 ..     489     543 .. 0.93
+
+>> yHMPu5000034884_Peterozyma_toletana  Seq_2331
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.8   0.1   9.8e-12   9.9e-12       1      53 []     499     553 ..     499     553 .. 0.92
+
+>> yHMPu5000035679_Candida_rhagii  Seq_4670
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.2   1.2e-11   1.2e-11       1      52 [.     474     527 ..     474     528 .. 0.91
+
+>> yHMPu5000035318_Hyphopichia_heimii  Seq_5051
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.2   1.2e-11   1.2e-11       1      52 [.     475     528 ..     475     529 .. 0.91
+
+>> Lachancea_kluyveri  Seq_4959
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.2   1.5e-11   1.5e-11       1      52 [.     420     473 ..     420     474 .. 0.88
+
+>> yHMPu5000034901_Ogataea_methylivora  Seq_3351
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.6   0.2   1.1e-11   1.1e-11       1      53 []     531     585 ..     531     585 .. 0.95
+
+>> yHMPu5000035687_Cyberlindnera_suaveolens  Seq_2196
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.1   2.5e-11   2.5e-11       1      52 [.     390     443 ..     390     444 .. 0.95
+
+>> yHMPu5000035686_Cyberlindnera_saturnus  Seq_5238
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.1   2.5e-11   2.5e-11       1      52 [.     395     448 ..     395     449 .. 0.95
+
+>> yHMPu5000034978_Cyberlindnera_mrakii  Seq_1303
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.1   2.4e-11   2.5e-11       1      52 [.     388     441 ..     388     442 .. 0.95
+
+>> Tetrapisispora_blattae  Seq_2142
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.1   1.9e-11   1.9e-11       1      52 [.     534     587 ..     534     588 .. 0.91
+
+>> Zygosaccharomyces_bailii  Seq_1667
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.6   1.5e-11   1.5e-11       1      53 []     375     429 ..     375     429 .. 0.91
+
+>> yHMPu5000035031_Candida_kruisii  Seq_4120
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   2.9e-11   2.9e-11       1      52 [.     476     529 ..     476     530 .. 0.91
+
+>> yHMPu5000035681_Candida_gotoi  Seq_1987
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.2   1.6e-11   1.6e-11       1      52 [.     472     525 ..     472     526 .. 0.89
+
+>> yHMPu5000034624_Pichia_nakasei  Seq_2417
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   0.1   7.1e-12   7.2e-12       1      52 [.     437     490 ..     437     491 .. 0.89
+
+>> Dekkera_bruxellensis  Seq_3692
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.8   1.3   8.4e-11   8.5e-11       1      53 []     602     656 ..     602     656 .. 0.90
+
+>> Lachancea_nothofagi  Seq_3385
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.4   0.2   1.3e-11   1.3e-11       2      52 ..     451     503 ..     450     504 .. 0.89
+
+>> yHMPu5000041863_Candida_gorgasii  Seq_4889
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.1   1.9e-11   1.9e-11       1      52 [.     371     424 ..     371     425 .. 0.90
+
+>> Candida_auris  Seq_4418
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   0.4   1.7e-11   1.8e-11       1      52 [.     387     440 ..     387     441 .. 0.91
+
+>> yHMPu5000041840_Candida_wancherniae  Seq_1932
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   0.3   1.7e-11   1.7e-11       1      52 [.     416     469 ..     416     470 .. 0.88
+
+>> yHMPu5000035297_Priceomyces_castillae  Seq_21
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   0.1   1.8e-11   1.8e-11       1      53 []     421     475 ..     421     475 .. 0.90
+
+>> yHMPu5000035335_Candida_blattae  Seq_4955
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.1   1.9e-11     2e-11       1      52 [.     401     454 ..     401     455 .. 0.93
+
+>> Stagonospora_nodorum  Seq_5953
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   0.3   1.8e-11   1.8e-11       1      53 []     429     494 ..     429     494 .. 0.97
+
+>> Lachancea_dasiensis  Seq_3044
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.8   0.3     2e-11     2e-11       2      52 ..     494     546 ..     493     547 .. 0.86
+
+>> Sugiyamaella_lignohabitans  Seq_4672
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   0.0   1.6e-11   1.6e-11       1      53 []     602     652 ..     602     652 .. 0.96
+
+>> yHMPu5000034973_Danielozyma_ontarioensis  Seq_2228
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.1   1.8e-11   1.9e-11       1      53 []     446     500 ..     446     500 .. 0.93
+
+>> yHMPu5000034614_Saturnispora_silvae  Seq_1468
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   0.1   2.3e-11   2.3e-11       1      53 []     224     278 ..     224     278 .. 0.93
+
+>> Metschnikowia_kipukae  Seq_2903
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.7   1.9e-11   1.9e-11       1      53 []     424     478 ..     424     478 .. 0.88
+
+>> Pachysolen_tannophilus  Seq_3669
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.9   0.5   9.4e-12   9.5e-12       1      53 []     653     707 ..     653     707 .. 0.91
+
+>> yHMPu5000035296_Priceomyces_carsonii  Seq_716
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.9   0.0   1.9e-11   1.9e-11       1      52 [.     411     464 ..     411     465 .. 0.91
+
+>> yHMPu5000034612_Saturnispora_saitoi  Seq_600
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   0.1   2.3e-11   2.3e-11       1      53 []     269     323 ..     269     323 .. 0.91
+
+>> yHMPu5000041833_Candida_tammaniensis  Seq_3404
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.8   0.1   2.1e-11   2.1e-11       1      52 [.     321     374 ..     321     375 .. 0.90
+
+>> yHMPu5000034597_Candida_stellimalicola  Seq_2692
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.1   2.2e-11   2.2e-11       1      53 []     304     358 ..     304     358 .. 0.94
+
+>> Candida_sojae  Seq_2675
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.1   2.3e-11   2.3e-11       1      52 [.     578     631 ..     578     632 .. 0.91
+
+>> yHMPu5000035651_Torulaspora_microellipsoides  Seq_3381
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.2   2.2e-11   2.3e-11       1      52 [.     552     605 ..     552     606 .. 0.95
+
+>> yHMPu5000035639_Wickerhamomyces_canadensis  Seq_3381
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.2   2.9e-11   2.9e-11       1      52 [.     462     515 ..     462     516 .. 0.94
+
+>> yHMPu5000034967_Candida_freyschussii  Seq_3989
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.8   0.3   4.2e-11   4.2e-11       1      52 [.     392     445 ..     392     446 .. 0.96
+
+>> yHMPu5000034646_Wickerhamiella_cacticola  Seq_2818
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   0.0   5.7e-11   5.8e-11       1      51 [.     267     315 ..     267     317 .. 0.94
+
+>> Lachancea_meyersii  Seq_716
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.1   2.5e-11   2.6e-11       2      52 ..     480     532 ..     479     533 .. 0.89
+
+>> yHMPu5000041678_Debaryomyces_prosopidis  Seq_2184
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   0.3   2.4e-11   2.4e-11       1      52 [.     428     481 ..     428     482 .. 0.90
+
+>> yHMPu5000041743_Candida_hawaiiana  Seq_4814
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.6   2.9e-11     3e-11       1      52 [.     264     317 ..     264     318 .. 0.88
+
+>> yHMPu5000026152_Torulaspora_franciscae  Seq_2615
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.3   2.2e-11   2.2e-11       1      52 [.     423     476 ..     423     477 .. 0.87
+
+>> yHMPu5000035286_Candida_azyma  Seq_325
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.2     3e-11     3e-11       1      52 [.     473     526 ..     473     527 .. 0.94
+
+>> yHMPu5000041829_Debaryomyces_fabryi  Seq_1202
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   0.3   2.4e-11   2.4e-11       1      52 [.     428     481 ..     428     482 .. 0.90
+
+>> Candida_tanzawaensis  Seq_690
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.0   2.5e-11   2.5e-11       1      52 [.     543     596 ..     543     597 .. 0.90
+
+>> Debaryomyces_hansenii  Seq_1023
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.4   0.3   2.6e-11   2.7e-11       1      52 [.     431     484 ..     431     485 .. 0.90
+
+>> yHMPu5000034632_Candida_athensensis  Seq_3509
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.1     3e-11     3e-11       1      52 [.    1031    1084 ..    1031    1085 .. 0.94
+
+>> yHMPu5000041824_Debaryomyces_subglobosus  Seq_214
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.5   0.3   2.6e-11   2.6e-11       1      52 [.     428     481 ..     428     482 .. 0.90
+
+>> Candida_parapsilosis  Seq_4182
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.2   0.4   3.2e-11   3.2e-11       1      52 [.     549     602 ..     549     603 .. 0.92
+
+>> Brettanomyces_anomalus  Seq_1971
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   0.1   1.4e-11   1.4e-11       1      53 []     566     620 ..     566     620 .. 0.89
+
+>> yHMPu5000034605_Spencermartinsiella_europaea  Seq_4190
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.1     3e-11     3e-11       1      53 []     517     567 ..     517     567 .. 0.97
+
+>> yHMPu5000034606_Priceomyces_medius  Seq_1575
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   0.0   3.3e-11   3.3e-11       1      52 [.     418     471 ..     418     472 .. 0.91
+
+>> yHMPu5000035707_Candida_heveicola  Seq_1294
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.1   4.8e-11   4.9e-11       1      52 [.     364     417 ..     364     418 .. 0.90
+
+>> Cyberlindnera_jadinii  Seq_4575
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.0   0.1   3.6e-11   3.6e-11       1      52 [.     461     514 ..     461     515 .. 0.93
+
+>> yHMPu5000035018_Candida_canberraensis  Seq_2258
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.0   0.0   3.7e-11   3.7e-11       1      52 [.     511     564 ..     511     565 .. 0.90
+
+>> yHMPu5000041862_Candida_golubevii  Seq_4904
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.0   0.1   3.5e-11   3.5e-11       1      53 []     528     582 ..     528     582 .. 0.95
+
+>> yHMPu5000035252_Yamadazyma_nakazawae  Seq_1039
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.8   0.0   4.3e-11   4.3e-11       1      52 [.     350     403 ..     350     404 .. 0.91
+
+>> yHMPu5000035652_Torulaspora_maleeae  Seq_374
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.2   0.1   3.1e-11   3.1e-11       1      52 [.     385     438 ..     385     439 .. 0.92
+
+>> Hyphopichia_burtonii  Seq_5158
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.8   0.1   4.3e-11   4.3e-11       1      52 [.     464     517 ..     464     518 .. 0.91
+
+>> Metschnikowia_arizonensis  Seq_3036
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.7   2.2e-11   2.2e-11       1      52 [.     465     518 ..     465     519 .. 0.88
+
+>> yHMPu5000035033_Candida_cretensis  Seq_1169
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.9   0.1     4e-11     4e-11       1      52 [.     463     516 ..     463     517 .. 0.89
+
+>> yHMPu5000041693_Debaryomyces_nepalensis  Seq_2903
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.8   0.2   4.3e-11   4.3e-11       1      52 [.     425     478 ..     425     479 .. 0.90
+
+>> yHMPu5000034932_Kuraishia_ogatae  Seq_1434
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.7   0.9   4.6e-11   4.6e-11       1      53 []     649     703 ..     649     703 .. 0.90
+
+>> yHMPu5000035659_Saturnispora_dispora  Seq_2703
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.2   4.8e-11   4.9e-11       1      53 []     238     292 ..     238     292 .. 0.91
+
+>> yHMPu5000035243_Zygoascus_meyerae  Seq_954
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.9   0.2   3.9e-11   3.9e-11       1      53 []     520     570 ..     520     570 .. 0.98
+
+>> Candida_intermedia  Seq_2163
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   0.4   5.5e-11   5.6e-11       1      52 [.     358     411 ..     358     412 .. 0.93
+
+>> yHMPu5000034654_Aciculoconidium_aculeatum  Seq_2033
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.1   5.3e-11   5.4e-11       1      53 []     534     588 ..     534     588 .. 0.92
+
+>> yHMPu5000034665_Kodamaea_laetipori  Seq_4275
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.0   4.8e-11   4.9e-11       1      52 [.     486     539 ..     486     540 .. 0.90
+
+>> yHMPu5000034610_Saturnispora_hagleri  Seq_3791
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.2   5.2e-11   5.3e-11       1      53 []     237     291 ..     237     291 .. 0.92
+
+>> yHMPu5000034674_Blastobotrys_muscicola  Seq_6644
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.9   0.2   3.8e-11   3.9e-11       1      53 []     288     341 ..     288     341 .. 0.89
+
+>> yHMPu5000034899_Ogataea_kodamae  Seq_3231
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.1   0.2   6.7e-11   6.8e-11       1      52 [.     466     519 ..     466     520 .. 0.93
+
+>> yHMPu5000034613_Saturnispora_serradocipensis  Seq_800
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.2   5.3e-11   5.3e-11       1      53 []     238     292 ..     238     292 .. 0.92
+
+>> Lachancea_lanzarotensis  Seq_769
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.1   4.8e-11   4.8e-11       1      52 [.     483     536 ..     483     537 .. 0.91
+
+>> Metschnikowia_hibisci  Seq_4176
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.2   0.4   6.3e-11   6.4e-11       1      52 [.     359     412 ..     359     413 .. 0.87
+
+>> Candida_albicans  C4_05680W_A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.4   0.1   2.7e-11   2.7e-11       1      52 [.     595     648 ..     595     649 .. 0.90
+
+>> yHMPu5000035641_Yamadazyma_scolyti  Seq_2623
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.0   6.1e-11   6.2e-11       1      53 []     362     416 ..     362     416 .. 0.88
+
+>> yHMPu5000035699_Cyberlindnera_maclurae  Seq_956
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.4   0.1   2.8e-11   2.8e-11       1      53 []     674     728 ..     674     728 .. 0.96
+
+>> Kluyveromyces_marxianus  Seq_2858
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.4   5.9e-11     6e-11       1      52 [.     639     692 ..     639     693 .. 0.92
+
+>> Scheffersomyces_stipitis  Seq_5549
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.0   5.9e-11     6e-11       1      52 [.     533     586 ..     533     587 .. 0.90
+
+>> yHAB148_Kazachstania_intestinalis  Seq_1739
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.2   0.9   6.5e-11   6.6e-11       1      52 [.     385     438 ..     385     439 .. 0.92
+
+>> Nakaseomyces_bracarensis  Seq_2715
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.9   6.2e-11   6.2e-11       1      53 []     425     479 ..     425     479 .. 0.94
+
+>> Scheffersomyces_lignosus  Seq_4492
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.3   0.1   5.9e-11   5.9e-11       1      52 [.     564     617 ..     564     618 .. 0.90
+
+>> Lodderomyces_elongisporus  Seq_2935
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.0   8.2e-11   8.3e-11       1      52 [.     680     733 ..     680     734 .. 0.89
+
+>> yHMPu5000034892_Ogataea_pilisensis  Seq_229
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.8   0.1   8.7e-11   8.8e-11       1      53 []     772     826 ..     772     826 .. 0.89
+
+>> Metschnikowia_borealis  Seq_1150
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.9   9.1e-11   9.1e-11       1      52 [.     446     499 ..     446     500 .. 0.88
+
+>> Metschnikowia_shivogae  Seq_4251
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.0   0.6   7.7e-11   7.7e-11       1      52 [.     358     411 ..     358     412 .. 0.87
+
+>> yHMPu5000034611_Saturnispora_mendoncae  Seq_1186
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.1   8.1e-11   8.1e-11       1      53 []     196     250 ..     196     250 .. 0.90
+
+>> Metschnikowia_hawaiiensis  Seq_4726
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   1.0   7.9e-11     8e-11       1      52 [.     461     514 ..     461     515 .. 0.88
+
+>> Metschnikowia_aberdeeniae  Seq_2593
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.0   0.6   7.7e-11   7.7e-11       1      52 [.     358     411 ..     358     412 .. 0.87
+
+>> Metschnikowia_santaceciliae  Seq_5591
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.9   8.9e-11     9e-11       1      52 [.     438     491 ..     438     492 .. 0.88
+
+>> Candida_succiphila  Seq_67
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   1.2   3.4e-11   3.4e-11       1      53 []     760     814 ..     760     814 .. 0.95
+
+>> yHMPu5000034643_Candida_schatavii  Seq_4140
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.1   0.1     7e-11   7.1e-11       1      52 [.     589     642 ..     589     643 .. 0.92
+
+>> Metschnikowia_matae  Seq_5397
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.8   0.9   8.3e-11   8.4e-11       1      52 [.     413     466 ..     413     467 .. 0.88
+
+>> Metschnikowia_cerradonensis  Seq_6047
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.9   9.2e-11   9.3e-11       1      52 [.     452     505 ..     452     506 .. 0.88
+
+>> Metschnikowia_continentalis  Seq_4548
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.9     9e-11   9.1e-11       1      52 [.     444     497 ..     444     498 .. 0.88
+
+>> yHMPu5000034681_Blastobotrys_americana  Seq_3962
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.0   0.3   7.7e-11   7.7e-11       1      53 []     476     526 ..     476     526 .. 0.98
+
+>> Metschnikowia_matae_maris  Seq_161
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.9   7.9e-11     8e-11       1      52 [.     399     452 ..     399     453 .. 0.88
+
+>> Metschnikowia_ipomoeae  Seq_905
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.8   0.9   8.8e-11   8.9e-11       1      52 [.     436     489 ..     436     490 .. 0.88
+
+>> Metschnikowia_lockheadii  Seq_6142
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.9     9e-11   9.1e-11       1      52 [.     444     497 ..     444     498 .. 0.88
+
+>> yHMPu5000034607_Saccharomycopsis_capsularis  Seq_450
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.1   1.2e-10   1.2e-10       1      52 [.     676     729 ..     676     730 .. 0.95
+
+>> Torulaspora_delbrueckii  Seq_922
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.5   0.1     1e-10     1e-10       1      52 [.     424     477 ..     424     478 .. 0.92
+
+>> Zygosaccharomyces_rouxii  Seq_3084
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.1   9.2e-11   9.3e-11       1      52 [.     422     475 ..     422     476 .. 0.90
+
+>> yHMPu5000035691_Candida_salmanticensis  Seq_1937
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.4   0.1   1.1e-10   1.1e-10       1      53 []     518     568 ..     518     568 .. 0.97
+
+>> yHMPu5000035677_Kodamaea_ohmeri  Seq_4955
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.0   9.1e-11   9.2e-11       1      52 [.     489     542 ..     489     543 .. 0.92
+
+>> Millerozyma_acaciae  Seq_3052
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.2     9e-11   9.1e-11       1      52 [.     416     469 ..     416     470 .. 0.91
+
+>> yHMPu5000041855_Candida_ascalaphidarum  Seq_65
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.2   9.8e-11   9.9e-11       1      52 [.     434     487 ..     434     488 .. 0.90
+
+>> yHMPu5000035022_Candida_emberorum  Seq_2558
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.0   9.8e-11   9.9e-11       1      52 [.     541     594 ..     541     595 .. 0.92
+
+>> Candida_homilentoma  Seq_3220
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.5   0.1     1e-10   1.1e-10       1      52 [.     502     555 ..     502     556 .. 0.91
+
+>> yHMPu5000034648_Candida_restingae  Seq_3848
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.0   9.9e-11     1e-10       1      52 [.     483     536 ..     483     537 .. 0.94
+
+>> yHMPu5000034891_Ogataea_pini  Seq_1702
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.2   5.1e-11   5.1e-11       1      53 []     549     603 ..     549     603 .. 0.93
+
+>> Kluyveromyces_lactis  Seq_2254
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.4   0.4   1.1e-10   1.1e-10       1      52 [.     629     682 ..     629     683 .. 0.91
+
+>> Priceomyces_haplophilus  Seq_2024
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   0.0     2e-10   2.1e-10       1      53 []     426     480 ..     426     480 .. 0.91
+
+>> yHMPu5000034615_Saturnispora_zaruensis  Seq_518
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.1   0.2   1.4e-10   1.4e-10       1      53 []     237     291 ..     237     291 .. 0.90
+
+>> Nakaseomyces_delphensis  Seq_1301
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.9   1.2e-10   1.2e-10       1      53 []     402     456 ..     402     456 .. 0.93
+
+>> yHMPu5000034986_Candida_oregonensis  Seq_1373
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.0   1.2e-10   1.2e-10       1      53 []     400     454 ..     400     454 .. 0.95
+
+>> yHMPu5000035032_Candida_gatunensis  Seq_1600
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   0.1   1.3e-10   1.3e-10       1      52 [.     428     481 ..     428     482 .. 0.90
+
+>> yHMPu5000041822_Dipodascus_geniculatus  Seq_3505
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.0   1.2e-10   1.2e-10       1      53 []     440     490 ..     440     490 .. 0.95
+
+>> Saccharomyces_mikatae  Seq_1248
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.1   0.1   2.8e-10   2.9e-10       1      50 [.     260     313 ..     260     314 .. 0.97
+
+>> Metschnikowia_hamakuensis  Seq_1121
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.1   0.7   7.1e-11   7.1e-11       1      52 [.     341     394 ..     341     395 .. 0.87
+
+>> yHMPu5000034623_Pichia_norvegensis  Seq_3980
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.0   0.0   1.5e-10   1.5e-10       1      52 [.     323     376 ..     323     377 .. 0.96
+
+>> yHAB133_Kazachstania_unispora  Seq_5243
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.8   0.6   1.8e-10   1.8e-10       1      53 []     473     527 ..     473     527 .. 0.90
+
+>> yHMPu5000041713_Debaryomyces_maramus  Seq_2176
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.8   0.3   1.7e-10   1.8e-10       1      52 [.     442     495 ..     442     496 .. 0.90
+
+>> Saccharomycopsis_malanga  Seq_3751
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   0.0   2.1e-10   2.1e-10       1      52 [.     527     580 ..     527     581 .. 0.92
+
+>> yHMPu5000034710_Kluyveromyces_dobzhanskii  Seq_4777
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.4   1.6e-10   1.6e-10       1      52 [.     621     674 ..     621     675 .. 0.91
+
+>> Metschnikowia_mauinuiana  Seq_3150
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.7   0.7   9.1e-11   9.2e-11       1      52 [.     421     474 ..     421     475 .. 0.87
+
+>> Candida_arabinofermentans  Seq_3116
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.5   0.2   2.2e-10   2.3e-10       1      52 [.     639     692 ..     639     693 .. 0.92
+
+>> yHMPu5000034893_Ogataea_philodendra  Seq_2113
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.5   0.4   2.2e-10   2.2e-10       1      53 []     488     542 ..     488     542 .. 0.94
+
+>> Candida_tenuis  Seq_1448
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   0.0     2e-10     2e-10       1      52 [.     372     425 ..     372     426 .. 0.87
+
+>> Babjeviella_inositovora  Seq_3850
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.0   9.2e-10   9.3e-10       1      52 [.     653     716 ..     653     717 .. 0.85
+
+>> Metschnikowia_kamakouana  Seq_49
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.5   2.4e-10   2.4e-10       1      52 [.     451     504 ..     451     505 .. 0.88
+
+>> yHMPu5000034890_Ogataea_ramenticola  Seq_5296
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3   0.4   2.4e-10   2.5e-10       1      53 []     650     704 ..     650     704 .. 0.90
+
+>> Candida_versatilis  Seq_101
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.7   0.7   1.9e-10   1.9e-10       1      53 []     241     291 ..     241     291 .. 0.96
+
+>> yHMPu5000035690_Candida_vartiovaarae  Seq_3664
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   0.1   2.7e-10   2.8e-10       1      52 [.     405     458 ..     405     459 .. 0.91
+
+>> Spathaspora_girioi  Seq_2929
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.0   2.3e-10   2.3e-10       1      52 [.     462     515 ..     462     516 .. 0.91
+
+>> yHMPu5000035040_Ambrosiozyma_maleeae  Seq_2831
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   0.2   2.8e-10   2.8e-10       1      53 []     637     691 ..     637     691 .. 0.92
+
+>> yHMPu5000034636_Ogataea_nitratoaversa  Seq_4986
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.8   0.0   3.6e-10   3.6e-10       1      53 []     686     740 ..     686     740 .. 0.90
+
+>> yHMPu5000034902_Ogataea_minuta  Seq_3720
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.7   4.3e-10   4.3e-10       1      53 []     549     603 ..     549     603 .. 0.94
+
+>> Candida_boidinii_JCM9604  Seq_2641
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.8   1.1   3.5e-10   3.6e-10       1      53 []    1147    1201 ..    1147    1201 .. 0.91
+
+>> yHMPu5000034999_Cephaloascus_fragrans  Seq_4993
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.9   0.1   3.2e-10   3.3e-10       1      52 [.     474     527 ..     474     528 .. 0.92
+
+>> yHMPu5000034990_Candida_corydali  Seq_2889
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.1   5.8e-10   5.8e-10       1      52 [.     519     572 ..     519     573 .. 0.89
+
+>> yHMPu5000034903_Ogataea_naganishii  Seq_368
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.7   0.2   3.7e-10   3.8e-10       1      52 [.     406     459 ..     406     460 .. 0.92
+
+>> Metschnikowia_bicuspidata  Seq_3844
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.1   0.1   2.9e-10     3e-10       1      53 []     509     563 ..     509     563 .. 0.91
+
+>> yHMPu5000035047_Barnettozyma_pratensis  Seq_5836
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   0.1   3.1e-10   3.2e-10       1      52 [.     434     487 ..     434     488 .. 0.95
+
+>> Ogataea_methanolica  Seq_443
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.9   0.4   6.8e-10   6.8e-10       1      53 []     733     787 ..     733     787 .. 0.90
+
+>> Candida_sorboxylosa  Seq_2721
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   0.1     5e-10     5e-10       1      53 []     481     535 ..     481     535 .. 0.92
+
+>> yHMPu5000034661_Dipodascus_albidus  Seq_4777
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.5   0.0   4.5e-10   4.5e-10       1      52 [.     449     498 ..     449     499 .. 0.94
+
+>> Naumovozyma_dairenensis  Seq_2404
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   1.4   2.1e-10   2.1e-10       1      52 [.     544     597 ..     544     598 .. 0.94
+
+>> Spathaspora_gorwiae  Seq_3034
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.0     4e-10   4.1e-10       1      52 [.     485     538 ..     485     539 .. 0.91
+
+>> yHMPu5000035242_Zygoascus_ofunaensis  Seq_2156
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.1   6.5e-10   6.6e-10       1      53 []     565     615 ..     565     615 .. 0.97
+
+>> yHMPu5000034622_Pichia_occidentalis  Seq_446
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.3   5.9e-10   5.9e-10       1      52 [.     645     698 ..     645     699 .. 0.91
+
+>> Metschnikowia_proteae  Seq_4138
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.4   0.9   2.4e-10   2.4e-10       1      52 [.     378     431 ..     378     432 .. 0.88
+
+>> yHMPu5000026197_Brettanomyces_custersianus  Seq_4654
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.1   7.5e-10   7.5e-10       1      53 []     517     571 ..     517     571 .. 0.92
+
+>> Spathaspora_arborariae  Seq_3170
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.5   0.0   4.3e-10   4.4e-10       1      52 [.     453     506 ..     453     507 .. 0.89
+
+>> Metschnikowia_drakensbergensis  Seq_614
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3   0.9   2.4e-10   2.5e-10       1      52 [.     381     434 ..     381     435 .. 0.88
+
+>> yHMPu5000034660_Diddensiella_caesifluorescens  Seq_1681
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.2   7.3e-10   7.3e-10       1      53 []     497     547 ..     497     547 .. 0.97
+
+>> yHAB159_Kazachstania_solicola  Seq_3709
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.8   5.8e-10   5.9e-10       1      53 []     497     551 ..     497     551 .. 0.93
+
+>> Ogataea_polymorpha  Seq_576
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   0.3   2.6e-10   2.7e-10       1      53 []     472     526 ..     472     526 .. 0.95
+
+>> Ogataea_parapolymorpha  Seq_1221
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   0.3   2.7e-10   2.8e-10       1      53 []     487     541 ..     487     541 .. 0.96
+
+>> yHMPu5000035640_Yamadazyma_philogaea  Seq_3341
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.0     6e-10     6e-10       1      52 [.     425     478 ..     425     479 .. 0.91
+
+>> Metschnikowia_similis  Seq_634
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.6   6.4e-10   6.5e-10       1      52 [.     551     604 ..     551     605 .. 0.87
+
+>> Metschnikowia_dekortum  Seq_3333
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.9   0.6   6.8e-10   6.9e-10       1      52 [.     583     636 ..     583     637 .. 0.87
+
+>> Metschnikowia_bowlesiae  Seq_1129
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.6   7.2e-10   7.2e-10       1      52 [.     607     660 ..     607     661 .. 0.87
+
+>> Nakaseomyces_nivariensis  Seq_782
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.7   1.0   7.8e-10   7.9e-10       1      53 []     413     467 ..     413     467 .. 0.93
+
+>> yHAB153_Kazachstania_rosinii  Seq_4733
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.8   9.2e-10   9.2e-10       1      52 [.     533     586 ..     533     587 .. 0.92
+
+>> yHMPu5000034627_Pichia_heedii  Seq_4640
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.7   0.2     4e-10     4e-10       1      52 [.     494     547 ..     494     548 .. 0.92
+
+>> yHMPu5000034904_Ogataea_nonfermentans  Seq_894
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.3   8.3e-10   8.4e-10       1      52 [.     545     598 ..     545     599 .. 0.93
+
+>> yHMPu5000034933_Kuraishia_molischiana  Seq_2912
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.2   7.1e-10   7.2e-10       1      52 [.     404     457 ..     404     458 .. 0.91
+
+>> yHAB132_Kazachstania_martiniae  Seq_1043
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.4   0.5     1e-09     1e-09       1      52 [.     424     477 ..     424     478 .. 0.95
+
+>> yHMPu5000026256_Zygotorulaspora_mrakii  Seq_1749
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.2   4.3e-10   4.3e-10       1      52 [.     555     608 ..     555     609 .. 0.94
+
+>> yHMPu5000035037_Candida_montana  Seq_639
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.0   8.6e-10   8.7e-10       1      52 [.     496     549 ..     496     550 .. 0.95
+
+>> yHAB158_Kazachstania_viticola  Seq_621
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.2   1.1e-09   1.2e-09       1      53 []     301     355 ..     301     355 .. 0.93
+
+>> yHMPu5000034887_Ogataea_trehaloabstinens  Seq_5371
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.3   0.3     1e-09   1.1e-09       1      53 []     504     558 ..     504     558 .. 0.92
+
+>> yHMPu5000035041_Ambrosiozyma_pseudovanderkliftii  Seq_4591
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.3   1.1e-09   1.1e-09       1      53 []     731     785 ..     731     785 .. 0.90
+
+>> yHMPu5000035048_Barnettozyma_salicaria  Seq_852
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.1   1.1e-09   1.1e-09       1      52 [.     407     460 ..     407     461 .. 0.94
+
+>> Ambrosiozyma_monospora  Seq_1142
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.3   1.2e-09   1.2e-09       1      52 [.     783     836 ..     783     837 .. 0.90
+
+>> yHAB143_Kazachstania_siamensis  Seq_2815
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.0   1.5   1.3e-09   1.3e-09       1      53 []     465     519 ..     465     519 .. 0.92
+
+>> yHMPu5000026124_Ogataea_henricii  Seq_194
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.8   0.1   1.6e-09   1.6e-09       1      53 []     531     585 ..     531     585 .. 0.90
+
+>> Kazachstania_naganishii  Seq_3985
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.3   1.7e-09   1.7e-09       1      53 []     413     467 ..     413     467 .. 0.88
+
+>> yHAB160_Kazachstania_kunashirensis  Seq_3344
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   1.1   1.6e-09   1.6e-09       1      52 [.     454     507 ..     454     508 .. 0.93
+
+>> yHMPu5000034897_Ogataea_glucozyma  Seq_131
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   0.1   1.9e-09   1.9e-09       1      52 [.     599     652 ..     599     653 .. 0.88
+
+>> yHMPu5000035670_Phaffomyces_opuntiae  Seq_104
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.0   1.7e-09   1.7e-09       1      52 [.     416     469 ..     416     470 .. 0.95
+
+>> Ambrosiozyma_kashinagacola  Seq_4110
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   0.2   1.8e-09   1.8e-09       1      53 []     642     696 ..     642     696 .. 0.90
+
+>> yHMPu5000035671_Phaffomyces_antillensis  Seq_3121
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.0   1.8e-09   1.8e-09       1      52 [.     416     469 ..     416     470 .. 0.95
+
+>> yHAB164_Kazachstania_aerobia  Seq_378
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   1.1   2.2e-09   2.2e-09       1      53 []     495     549 ..     495     549 .. 0.90
+
+>> yHMPu5000034886_Ogataea_trehalophila  Seq_1532
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.4   0.4   9.9e-10     1e-09       1      53 []     766     820 ..     766     820 .. 0.91
+
+>> yHMPu5000035672_Phaffomyces_thermotolerans  Seq_1828
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.4   0.0     2e-09     2e-09       1      52 [.     436     489 ..     436     490 .. 0.95
+
+>> yHMPu5000035673_Candida_orba  Seq_1681
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   0.1   2.2e-09   2.3e-09       1      52 [.     455     508 ..     455     509 .. 0.95
+
+>> yHMPu5000026145_Ambrosiozyma_vanderkliftii  Seq_3188
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.3   3.5e-09   3.5e-09       1      53 []     731     785 ..     731     785 .. 0.90
+
+>> yHAB136_Kazachstania_bromeliacearum  Seq_1944
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.1   0.5   2.5e-09   2.5e-09       1      52 [.     383     436 ..     383     437 .. 0.92
+
+>> yHMPu5000034998_Cephaloascus_albidus  Seq_5656
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.1   0.1   2.6e-09   2.6e-09       1      51 [.     515     567 ..     515     569 .. 0.91
+
+>> yHMPu5000034631_Martiniozyma_abiesophila  Seq_7547
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.0   9.7e-09   9.8e-09       1      50 [.     152     203 ..     152     206 .. 0.90
+
+>> yHMPu5000034947_Ambrosiozyma_philentoma  Seq_3896
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.2   3.4e-09   3.4e-09       1      53 []     587     641 ..     587     641 .. 0.92
+
+>> yHMPu5000034946_Ambrosiozyma_oregonensis  Seq_5507
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.2   3.4e-09   3.5e-09       1      53 []     604     658 ..     604     658 .. 0.92
+
+>> yHMPu5000034709_Kluyveromyces_aestuarii  Seq_1252
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.6   3.5e-09   3.5e-09       1      50 [.     578     629 ..     578     631 .. 0.93
+
+>> yHMPu5000035301_Pichia_terricola  Seq_3145
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.0   4.2e-09   4.3e-09       1      52 [.     439     492 ..     439     493 .. 0.90
+
+>> yHMPu5000034885_Ogataea_zsoltii  Seq_5389
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   0.2   1.7e-09   1.7e-09       1      53 []     550     604 ..     550     604 .. 0.92
+
+>> Candida_glabrata  Seq_3579
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.6   0.2   3.5e-09   3.6e-09       1      52 [.     471     524 ..     471     525 .. 0.93
+
+>> Spathaspora_hagerdaliae  Seq_826
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.7   0.0   3.4e-09   3.5e-09       1      52 [.     484     537 ..     484     538 .. 0.89
+
+>> Pichia_membranifaciens  Seq_2656
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   0.3   1.9e-09   1.9e-09       1      52 [.     619     672 ..     619     673 .. 0.91
+
+>> yHAB134_Kazachstania_turicensis  Seq_278
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.8   0.5   6.3e-09   6.3e-09       1      53 []     513     567 ..     513     567 .. 0.92
+
+>> Fusarium_graminearum  Seq_4815
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.0     7e-09   7.1e-09       1      53 []     562     629 ..     562     629 .. 0.97
+
+>> yHAB147_Kazachstania_taianensis  Seq_2654
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   1.3   1.1e-08   1.1e-08       1      53 []     429     483 ..     429     483 .. 0.91
+
+>> yHMPu5000026137_Ambrosiozyma_ambrosiae  Seq_844
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.2   1.1e-08   1.1e-08       1      53 []     581     635 ..     581     635 .. 0.92
+
+>> Nakaseomyces_castellii  Seq_3138
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.0   0.2   2.3e-08   2.3e-08       1      52 [.     456     509 ..     456     510 .. 0.92
+
+>> yHAB155_Kazachstania_spencerorum  Seq_1180
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.8   1.2e-08   1.2e-08       1      52 [.     475     528 ..     475     529 .. 0.92
+
+>> yHMPu5000035674_Kregervanrija_delftensis  Seq_5567
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.2   1.9e-08   1.9e-08       1      53 []     548     602 ..     548     602 .. 0.89
+
+>> yHMPu5000035675_Kregervanrija_fluxuum  Seq_54
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.2     4e-08   4.1e-08       1      52 [.     515     568 ..     515     569 .. 0.88
+
+>> yHMPu5000034637_Ogataea_populiabae  Seq_4363
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.1   2.9e-07   2.9e-07       1      53 []     547     601 ..     547     601 .. 0.91
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (53 nodes)
+Target sequences:                        303  (173971 residues searched)
+Passed MSV filter:                       300  (0.990099); expected 6.1 (0.02)
+Passed bias filter:                      300  (0.990099); expected 6.1 (0.02)
+Passed Vit filter:                       300  (0.990099); expected 0.3 (0.001)
+Passed Fwd filter:                       300  (0.990099); expected 0.0 (1e-05)
+Initial search space (Z):                303  [actual number of targets]
+Domain search space  (domZ):             300  [number of targets reported over threshold]
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.10
+# Mc/sec: 85.69
+//
+[ok]
