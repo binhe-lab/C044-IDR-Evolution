@@ -1,0 +1,520 @@
+---
+title: "Pho4 evolution homologs explorative analysis"
+author: "Joshua Ayelazuno"
+date: '`r Sys.Date()`'
+output: 
+  pdf_document: default
+  html_notebook: default
+  html_document: default
+---
+
+
+```{r}
+#load required packagges 
+library(tidyverse)
+library(cowplot)
+old <- theme_set(new = theme_cowplot())
+
+```
+
+# run two querys using evalue of 1e-5 and 1e, using 343taxa_protein_IDs_index.txt as -suject and S288C_YFR034C_PHO4_protein.fsa as query 
+# blast_formatter,sseqid, qcovs, qstart, qend, slen, sstart, send, qcovshsp, pident, mismatch evalue and store in out file 
+#sseqid: Subject sequence ID. This is the identifier of the sequence in the subject database that the query sequence aligned with.
+
+#qcovs: Query coverage per subject. It represents the percentage of the query sequence that is covered by the alignment with the subject sequence.
+
+#qstart: Start position of the alignment on the query sequence.
+
+#qend: End position of the alignment on the query sequence.
+
+#slen: Length of the subject sequence.
+
+#sstart: Start position of the alignment on the subject sequence.
+
+#send: End position of the alignment on the subject sequence.
+
+#qcovshsp: Query coverage per high-scoring pair. It represents the percentage of the query sequence that is covered by the high-scoring pair.
+
+#pident: Percentage of identical matches. It represents the percentage of nucleotides or amino acids in the alignment that are identical between the query and subject sequences.
+
+#mismatch: Number of mismatches in the alignment.
+
+#evalue: E-value, or Expectation value. It represents the expected number of chance matches with a similar or better score that could occur in the database by random chanc
+```{r}
+## clean the Blastp output files, raname columes and separate species and seqeunce identifier 
+## results for e value 1e-5 produced 297 hits 
+blastp_result_txt <- read_tsv("~/Desktop/Pho4_orthologs /orthomcl_output/blastp_results/blastp_results.txt",comment = "#", col_names = FALSE, show_col_types = FALSE  )
+blastp_result<- blastp_result_txt %>%
+  rename(Species = X1, QCoverage = X2, QStart = X3, QEnD = X4, SLength = X5, SStart = X6, SEnd = X7, Identity = X8, Mismatches = X9, EValues = X10)
+blastp_results2  <- separate(blastp_result, Species, into = c("Species", "seq_identifier"), sep = "@")
+folder_path <- "/Users/jayelazuno/Desktop/Pho4_orthologs /orthomcl_output/blastp_results/"
+write_csv(blastp_results2, paste0(folder_path, "output_table.csv"))
+write_xlsx(blastp_results2, paste0(folder_path, "output_table.xlsx"))
+
+```
+
+
+```{r}
+## results for e value 1e pruduced 367 hits 
+blastp_result_1e_txt <- read_tsv("~/Desktop/Pho4_orthologs /orthomcl_output/blastp_results/results_1e.txt",comment = "#", col_names = FALSE, show_col_types = FALSE  )
+blastp_result_1e <- blastp_result_1e_txt %>%
+  rename(Species = X1, QCoverage = X2, QStart = X3, QEnD = X4, SLength = X5, SStart = X6, SEnd = X7, Identity = X8, Mismatches = X9, EValues = X10)
+blastp_results_1ef  <- separate(blastp_result_1e, Species, into = c("Species", "seq_identifier"), sep = "@")
+folder_path_1e <- "/Users/jayelazuno/Desktop/Pho4_orthologs /orthomcl_output/blastp_results/"
+write_csv(blastp_results_1ef, paste0(folder_path, "output_table_1e.csv"))
+write_xlsx(blastp_results_1ef, paste0(folder_path, "output_table_1e.xlsx"))
+```
+
+
+```{r}
+# explore the variation in Evalue and effect on number species hits 
+blastp_results_1ef %>%
+  mutate(threshold = ifelse(EValues >= 1e-50,
+                            ifelse(EValues <= 1e-10, "<=e-10 & >1e-50",
+                                   ifelse(EValues <= 1e-5, "<=e-5 & >1e-10",
+                                          ">e-5")), "<=e-50")) %>%
+  select(Species, seq_identifier, EValues, threshold) %>%
+  mutate(threshold = factor(threshold, levels = c("<=e-50","<=e-10 & >1e-50","<=e-5 & >1e-10",">e-5"))) %>%
+  group_by(threshold) %>%
+  dplyr::summarise(count = n()) %>%
+  ggplot(aes(x=threshold, y=count, label = count)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Distribution by Evalue threshold", x = "Threshold", y = "no of hits")
+  geom_text(size=4)
+
+
+```
+
+
+```{r}
+#extract duplicates 
+ggplot(blastp_results_1ef, aes(x = Identity, y = Mismatches)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(title = "Scatter plot of %identity against Mismatches", x = "Identity", y = "Mismatches")
+
+
+
+```
+
+
+```{r}
+## explore partterns in data 
+#Points closer to 100% identity and lower E-values may indicate higher homology.
+ggplot(blastp_results2, aes(x = Identity, y = EValues)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Identity vs. EValues")
+```
+
+
+```{r}
+##Lower median values may suggest higher homology.
+ggplot(blastp_results2, aes(x = seq_identifier, y = Mismatches)) +
+  geom_boxplot(notch = TRUE, notchwidth = 0.5, fatten = 2) +  # Adjust the fatten parameter
+  labs(title = "Box Plot of Mismatches by seq_identifier")
+
+```
+
+
+```{r}
+# what is the correlation among Idenity, Mismatches and Evalue 
+correlation_matrix <- cor(blastp_results2[, c("Identity", "Mismatches", "EValues")])
+
+heatmaply(correlation_matrix, main = "Correlation Heatmap")
+```
+
+
+```{r}
+E.th = 1e-2 # E-value threshold to use
+tmp <- filter(blastp_results_1ef, EValues <= E.th) # filter the dataset
+# query coverage distribution
+p.qcov <- ggplot(tmp, aes(QCoverage)) + geom_histogram(aes(y = after_stat(count / sum(count))), bins = 50) +
+  stat_ecdf(color = "red", linewidth = 1) +
+  labs(title = "Query coverage distribution and CDF") + ylab("Frequency")
+p.qcov_piden <- ggplot(tmp, aes(x = QCoverage, y = Identity)) + 
+  geom_hex(bins = 40) + scale_fill_viridis_c(option = "D") +
+  labs(title = "2D density plot, qcov vs pident")
+p.qstart_end <- tmp %>% 
+  select(QStart, QEnD) %>% 
+  pivot_longer(cols = c(QStart, QEnD), names_to = "position", values_to = "coordinate") %>% 
+  mutate(position = case_match(
+    position,
+    "QStart" ~ "start",
+    "QEnD" ~ "end"
+  )) %>% 
+  ggplot(aes(x = coordinate, group = position)) +
+  geom_freqpoly(aes(color = position), bins = 60) +
+  scale_color_manual("Query", values = c("start" = "forestgreen", "end" = "orange2")) +
+  labs(title = "Query start and end position distribution")
+p.qcov
+```
+
+
+```{r}
+p.qcov_piden
+``
+
+```
+
+
+```{r}
+p.qstart_end
+```
+
+
+```{r}
+# The distribution of homologs per spcies 
+species <- read_tsv("~/Desktop/Pho4_orthologs /orthomcl_output/343taxa_protein_IDs_index.txt",col_types = col())
+my_calc_n_homologs <- function(th = 1e-2){
+  # given the blast hit list, the species list and an E-value threshold
+  # count the number of homologs per species and plot as a bar graph
+  res <- left_join(
+    select(species, Species = old_speceis_names), 
+    filter(datA, EValues <= th), 
+    by = "Species") %>% 
+    group_by(Species) %>% 
+    summarize(n_homologs = sum(!is.na(seq_identifier)))
+  return(res)
+}
+```
+
+
+```{r}
+thresholds <- c("1" = 1, "0.1" = 1e-1, "0.01" = 1e-2, 
+               "0.001" = 1e-3, "1e-4" = 1e-4, "1e-5" = 1e-5)
+tmp <- map_dfr(thresholds, my_calc_n_homologs, .id = "E.th")
+tmp %>% 
+  mutate(E.th = as.numeric(E.th),
+         E.th = factor(E.th, levels = sort(unique(E.th), decreasing = TRUE))) %>% 
+  ggplot(aes(x = n_homologs, group = E.th)) + 
+  geom_bar(aes(fill = E.th), position = position_dodge(0.9)) + 
+  geom_text(aes(label = after_stat(count)), stat = "count", vjust = -0.5,
+            position = position_dodge(0.9), size = 2.5) +
+  scale_fill_brewer("E_value <", type = "seq", palette = 2) +
+  theme(legend.position = c(0.8, 0.7)) +
+  labs(title = "Distribution of number of homologs per species")
+```
+
+
+```{r}
+### filter data for single hits and maintain only the seq_identifier column, and rename species_name = species
+Species_fas <- blastp_results_1ef %>%
+  group_by(Species) %>%
+  filter(n() == 1) %>%
+  select(Species, seq_identifier) %>%
+  rename(species_name = Species)
+write_csv(Species_fas, paste0(folder_path, "species_names.csv"))
+```
+
+
+```{r}
+taxa_hit <- read_tsv("~/Desktop/Pho4_orthologs /orthomcl_output/20231212_343taxa.txt",comment = "#", col_names = FALSE, show_col_types = FALSE) %>% rename(seq_name = X1, seq_length = X2)
+taxa_hit %>%
+  mutate(threshold = ifelse(seq_length < 300, "<=300",
+                            ifelse(seq_length >= 300 & seq_length < 500, ">=300 and <500",
+                                   ifelse(seq_length >= 500 & seq_length < 700, ">=500 and <700",
+                                          ifelse(seq_length >= 700 & seq_length < 1000, ">=700 and <1000",
+                                                 ifelse(seq_length >= 1000 & seq_length <1500, ">=1000 and <1500",
+                                                        ifelse(seq_length > 1500, ">1500", NA_character_)
+                                          )
+                                   )
+                            )
+  ))) %>%
+  select(seq_name,seq_length, threshold) %>%
+  mutate(threshold = factor(threshold, levels = c("<=300", ">=300 and <500", ">=500 and <700", ">=700 and <1000", ">=1000 and <1500", ">1500"))) %>%
+  group_by(threshold) %>%
+  dplyr::summarise(count = n()) %>%
+  ggplot(aes(x = threshold, y = count, label = count)) +
+  geom_bar(stat = "identity") +
+  geom_text(size = 4, vjust = -0.5) +  # Adjust vjust for text placement
+  labs(title = "Distribution by Sequence Length Threshold",
+       x = "Threshold",
+       y = "Number of Hits")
+```
+
+
+```{r}
+# visualize disorder content prediction from RAPID 
+taxa_disord_RAPID <-  read.csv("~/Desktop/Pho4_orthologs /orthomcl_output/blastp_results/343taxa-protein-homologs-seqlenght.csv", comment = "#") 
+
+#Plotluck is a tool for exploratory data visualization in R that automates such steps. It creates complete graphics based on ggplot; the only #things that have to be specified are the data frame, a formula, and optionally a weight column.
+#install.packages('devtools')
+#library(devtools)
+#devtools::install_github("stefan-schroedl/plotluck")
+library(plotluck)
+plotluck(taxa_disord_RAPID, seq_length ~ Disorder.Content..)
+
+```
+
+
+```{r}
+library(plotluck)
+# explorative analysis of hmmsearch-bHLH-in-Pho4-blast-hit.txt 
+file_path_hmm <-("~/Desktop/C044-IDR-Evolution/20-collect-orthologs/output/bHLH_hmmsearch_result/bHLH_hmmsearch_result20240119-hmmsearch_bHLH_in_Pho4_Blast_hit_clean.csv") 
+ your_data <- read_csv(file_path_hmm)   
+ hmmsearch_bHLH_in_Pho4_Blast_hit <- your_data %>%
+   select(V1, V3, V8, V9, V14:V22) %>%
+   rename( seq_name = V1, seq_length = V3,seq_score = V8, seq_bias = V9, bHLH_score = V14, bHLH_bias = V15, hmm_coord_start = V16, hmm_coord_to = V17, align_coord_start = V18, align_coord_end = V19, evn_coord_start = V20, env_coord_end = V21, acc = V22) 
+file_path_hmm <- "~/Desktop/C044-IDR-Evolution/20-collect-orthologs/output/bHLH_hmmsearch_result"
+write_csv(hmmsearch_bHLH_in_Pho4_Blast_hit, paste0(file_path_hmm, "20240119-hmmsearch_bHLH_in_Pho4_Blast_hit_clean.csv"))
+# compare overall seq-score to the bHLH score 
+plotluck(hmmsearch_bHLH_in_Pho4_Blast_hit,  ~ bHLH_bias) +
+  ggtitle("comparison of bHLH query bias in sequence and bHLH domain") +  # Add a title
+  labs(x = "bHLH_bias", y = "seq_bias") +  # Add x and y axis titles
+  geom_point(color = "black") + # Change the point color to blue
+  geom_smooth(method = "lm", se = TRUE) +  # Include confidence interval
+  scale_color_manual(values = c("Trend Line" = "red")) +
+  theme_minimal()
+```
+
+
+```{r}
+library(GGally)
+# Create a scatterplot matrix with additional aesthetics
+ggpairs(hmmsearch_bHLH_in_Pho4_Blast_hit, columns = c("align_coord_start", "align_coord_end", "evn_coord_start", "env_coord_end"),
+        title = "alignment and envelope in sequence exploration",
+        upper = list(continuous = "points", combo = "box"),
+        lower = list(continuous = "points", combo = "density"),
+        diag = list(continuous = "barDiag", combo = "barDiag"),
+        axisLabels = "show",
+        ggplot2::aes(color = env_coord_end, alpha = 0.7)) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+```{r}
+# compare seq lenght to start of bHLH 
+library(GGally)
+
+# Create a scatterplot matrix comparing "align_coord_start" and "align_coord_end"
+ggpairs(hmmsearch_bHLH_in_Pho4_Blast_hit, columns = c("seq_length", "align_coord_start"),
+        title = "seq_length and bHLH start position",
+        upper = list(continuous = "points", combo = "box"),
+        lower = list(continuous = "points", combo = "density"),
+        diag = list(continuous = "barDiag", combo = "barDiag"),
+        axisLabels = "show",
+        ggplot2::aes(color = align_coord_start, alpha = 0.7)) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+plotluck(hmmsearch_bHLH_in_Pho4_Blast_hit, seq_length ~ align_coord_start)
+```
+
+
+```{r}
+ggplot(hmmsearch_bHLH_in_Pho4_Blast_hit, aes(x = align_coord_end, y = seq_length, fill = align_coord_start)) +
+  geom_point(shape = 21, size = 3, alpha = 0.7) +
+  scale_fill_gradient(low = "blue", high = "red") +
+  labs(title = "Alignment Coordinates vs. Sequence Length",
+       x = "Align Coord end",
+       y = "seq length",
+       fill = "align seq start") +
+  theme_minimal()
+```
+
+
+```{r}
+#install.packages("readr")
+#library(readr)
+#hmmscan_file <- "~/Desktop/Pho4_orthologs /20240124-hmmscan-output/20240124_Hmmscan_Pfam-Pho4-blast-hits.txt"
+#hmmscan_data <- read_table(hmmscan_file, skip = 3, col_names = FALSE)
+Hmmscan_clean <- hmmscan_data %>%
+   select(X1:X4, X6:X9, X14, X18:X25) %>%
+   rename(target_name = X1, Acc_number = X2, target_length = X3, query_name = X4, query_length = X6, E_value = X7, seq_bias = X8, seq_score = X8, bias = X9, domain_score = X14, hmm_coord_start = X18, hmm_coord_to = X19, evn_coord_start = X20, env_coord_end = X21, acc = X22, Type = X23, Binding = X24, domain = X25)
+Hmms_clean <- unite(Hmmscan_clean, target_description, Type, Binding, domain, sep = " ")
+file_path_hmmscan <- "~/Desktop/Pho4_orthologs /20240124-hmmscan-output/"
+write_csv(Hmms_clean, paste0(file_path_hmmscan, "20240124-hmmscan_bHLH_in_Pho4_Blast_hit_clean.csv"))
+hmmscan_clean <- read_csv("~/Desktop/Pho4_orthologs /20240124-hmmscan-output/20240124-hmmscan_Pho4_Blast_hit_clean.csv")
+```
+
+
+```{r}
+# Create the heatmap
+ggplot(hmmscan_clean, aes(x = query_name, y = target_name, fill = query_length)) +
+  geom_tile(width = 1.5, height = 1.5) +
+  scale_fill_gradient(low = "white", high = "red") +
+  labs(
+    title = "Heatmap of sequence length by query name and query target",
+    x = "query name",
+    y = "target name"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 6),
+        axis.text.y = element_text(size = 12),
+        plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
+        panel.spacing.y = unit(0.5, "cm"))  # Adjust margins
+# subset data to calculate ratio of target start to total seq length and make hist and boxplot 
+hmmscan_clean$ratio_target_strt_query_len <- (hmmscan_clean$hmm_coord_start / hmmscan_clean$query_length) * 100
+# make hist
+hist(hmmscan_clean$ratio_target_strt_query_len, 
+     breaks = seq(0, 100, by = 10),
+     main = "Ratio of Target Query Start to Query Length",
+     xlab = "Target Query Start %")
+#make a boxplot
+boxplot(hmmscan_clean$ratio_target_strt_query_len,
+        ylab = "Query target start/query Length %",
+        main = "Ratio of Target Query Start to Query Length")
+        axis(side = 2, at = seq(0, 100, by = 10))
+```
+
+
+```{r}
+#subsetting data 
+hmmscan_homologs_with_bHLH <- hmmscan_clean %>%
+  group_by(query_name) %>%
+  filter(n() == 1) %>%
+  ungroup()
+# subset for homologs with bHLH = 1 and other Pfam domains 
+hmmscan_hHLH_is_1 <- hmmscan_grt_1_hit %>%
+  group_by(query_name) %>%
+  filter(sum(target_name == "HLH") == 1)
+#make a bar plot 
+ggplot(hmmscan_hHLH_is_1, aes(x = query_name, fill = target_name)) +
+  geom_bar(position = "stack") +
+  labs(title = " 8 homologs with one bHLH domain and other Pfam domains",
+       x = "query_name", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+# subset for targets with bHLH > 1 and no additional Pfam domains 
+hmmscan_bHLH_grt_1_noPfam <- hmmscan_grt_1_hit %>%
+  group_by(query_name) %>%
+  filter(sum(target_name == "HLH") > 1 & n_distinct(target_name) == 1)
+#make a histogram to visualize data
+ggplot(hmmscan_bHLH_grt_1_noPfam, aes(x = factor(query_name))) +
+  geom_bar(aes(fill = target_name), position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(x = "query_name", y = "Count", fill = "target_name") +
+  ggtitle(" 54 Homologs with >1 bHLH hit and no additional Pfam hits")
+#subset for homologs with HLH>1 and other Pfam domains 
+hmmscan_bHLH_grt_1_withOther <- hmmscan_grt_1_hit %>%
+  group_by(query_name) %>%
+  filter(sum(target_name == "HLH") > 1 & n_distinct(target_name) > 1)
+# make a gragh 
+ggplot(hmmscan_bHLH_grt_1_withOther, aes(x = query_name, fill = target_name)) +
+  geom_bar(position = "stack") +
+  labs(title = "7 Counts of homologs with >1 bHLH domain and other Pfam domains",
+       x = "query_name", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+#make a pie chart to summerize data 
+# Assuming you have a data frame or a summary with the counts
+hits_data <- data.frame(
+  condition = c("Single bHLH domain", ">1 bHLH domain, no other Pfam domain hits", 
+                "Single bHLH domain and other Pfam domain hits", 
+                ">1 bHLH domain and other Pfam domain hits"),
+  count = c(231, 54, 8, 7)
+)
+
+# Plotting the pie chart
+library(ggplot2)
+
+ggplot(hits_data, aes(x = "", y = count, fill = condition)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y") +
+  theme_void() +
+  theme(legend.position = "bottom") +
+  labs(title = "Distribution of Hits", fill = "Condition")
+# make a bar plot 
+
+data <- data.frame(
+  category = c("Single bHLH","Single bHLH, Other Pfam", "Multiple bHLH, Other Pfam"),
+  count = c(285, 8, 7)
+)
+
+# Calculate percentages
+data$percentage <- (data$count / sum(data$count)) * 100
+
+# Create bar plot
+ggplot(data, aes(x = category, y = percentage, fill = category)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = sprintf("%.1f%%", percentage)), vjust = -0.5) +
+  labs(title = "Distribution of Hits by Category", y = "Percentage", x = "Category") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+# make a plot to visualize query_name, domain_score, hmm_coord_start and hmm_coord_end using plotly 
+plot_ly(
+  data = hmmscan_bHLH_grt_1_noPfam,
+  x = ~domain_score,
+  y = ~hmm_coord_start,
+  z = ~hmm_coord_to,
+  color = ~query_name,
+  type = "scatter3d",
+  mode = "markers"
+) 
+#  make a plot to visualize query_name, domain_score, hmm_coord_start and hmm_coord_end using plotly 
+# Install and load the ggplot2 package if not already installed
+# install.packages("ggplot2")
+ggplot(hmmscan_bHLH_grt_1_noPfam, aes(x = hmm_coord_start, y = hmm_coord_to, color = domain_score)) +
+  geom_point() +
+  scale_color_gradient(low = "blue", high = "red", name = "Domain Score") +
+  labs(x = "hmm_coord_start", y = "hmm_coord_end", title = "Only 1 bHLH domain in the homologs with > 1 bHLH and no other Pfam is significant") +
+  theme_minimal()
+```
+
+
+```{r}
+# Install and load necessary packages if not already installed
+# install.packages(c("tidyverse", "igraph", "showtext", "rcartocolor"))
+library(tidyverse)
+library(igraph)
+library(showtext)
+library(rcartocolor)
+
+# Define node names
+nodes <- c("343taxa-protein.fas", "Blastp ScPho4.fas", "231, single bHLH domain", 
+           "112 no hit or bHLH >1", "285 core homologs", "54 bHLH >1, no Pfam", 
+           "15 bHLH, other Pfam", "43 no bHLH", "red flagged")
+
+# Create data frame for nodes
+nodes_df <- data.frame(name = nodes)
+
+# Define edges
+edges <- data.frame(
+  from = c("343taxa-protein.fas", "Blastp ScPho4.fas", "Blastp ScPho4.fas", 
+           "231, single bHLH domain", "112 no hit or bHLH >1", 
+           "112 no hit or bHLH >1", "112 no hit or bHLH >1", 
+           "15 bHLH, other Pfam", "54 bHLH >1, no Pfam"),
+  to = c("Blastp ScPho4.fas", "231, single bHLH domain", "112 no hit or bHLH >1", 
+         "285 core homologs", "54 bHLH >1, no Pfam", "15 bHLH, other Pfam", 
+         "43 no bHLH", "red flagged", "285 core homologs")
+)
+
+# Create directed graph
+graph <- graph_from_data_frame(d = edges, vertices = nodes_df, directed = TRUE)
+
+# Set node attributes for shape
+# Set up showtext for rendering text
+showtext_auto()
+
+# Define colors based on shape
+node_colors <- ifelse(V(graph)$shape == "diamond", "red", "lightblue")
+
+# Plot the flowchart using base R plotting
+plot(
+  graph,
+  vertex.label = V(graph)$name,
+  vertex.label.dist = 0.5,
+  vertex.size = 30,
+  vertex.color = node_colors,
+  edge.label = edges$label,
+  edge.label.cex = 0.8,
+  layout = layout_with_kk(graph),
+  main = "Flowchart"
+)
+
+# Add custom shapes manually
+shapes <- V(graph)$shape
+diamond_indices <- which(shapes == "diamond")
+rect_indices <- which(shapes == "box")
+
+points <- layout_with_kk(graph)
+for (i in diamond_indices) {
+  symbols(points[i, 1], points[i, 2], circles = 0.1, inches = 0.15, add = TRUE, inches = 0.15, bg = "red")
+}
+
+for (i in rect_indices) {
+  symbols(points[i, 1], points[i, 2], squares = 0.1, inches = 0.15, add = TRUE, bg = "lightblue")
+}
+
+
+```
