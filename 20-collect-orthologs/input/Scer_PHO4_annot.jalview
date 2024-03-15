@@ -1,0 +1,49 @@
+SP2	f61026
+Interaction with PHO80	979d6c
+Transcription activation domain	3acea0
+SP1	f50b1c
+9aaTAD	72517b
+helix	221fcb
+oligomerization	a8b5a9
+Nuclear localization signal	155d84
+bHLH	1cd430
+modified residue	9d7057
+Interaction with PHO2	b5bbca
+SP6	ed0a15
+S/T-P-X-[LMIF]	ae8f6f
+SP5	ee1015
+SP4	ef1023
+SP3	f60a10
+
+STARTGROUP	Uniprot
+Uniprot  	Scer	-1	114	114	SP2	0.0
+Uniprot  	Scer	-1	1	31	Interaction with PHO80	0.0
+Uniprot  	Scer	-1	156	200	Interaction with PHO80	0.0
+Uniprot  	Scer	-1	75	99	Transcription activation domain	0.0
+Uniprot  	Scer	-1	100	100	SP1	0.0
+Uniprot  	Scer	-1	75	83	9aaTAD	0.0
+Uniprot  	Scer	-1	254	258	helix	0.0
+Uniprot  	Scer	-1	260	275	helix	0.0
+Uniprot  	Scer	-1	279	282	helix	0.0
+Uniprot  	Scer	-1	294	306	helix	0.0
+Uniprot  	Scer	-1	203	227	oligomerization	0.0
+Uniprot  	Scer	-1	140	166	Nuclear localization signal	0.0
+Uniprot  	Scer	-1	250	306	bHLH	0.0
+Uniprot  	Scer	-1	242	242	modified residue	0.0
+Uniprot  	Scer	-1	243	243	modified residue	0.0
+Uniprot  	Scer	-1	201	218	Interaction with PHO2	0.0
+Uniprot  	Scer	-1	223	223	SP6	0.0
+Uniprot  	Scer	-1	204	204	SP5	0.0
+Uniprot  	Scer	-1	152	152	SP4	0.0
+Uniprot  	Scer	-1	128	128	SP3	0.0
+ENDGROUP	Uniprot
+
+STARTGROUP	phosphorylation
+S/T-P-X-[LMIF]	Cgla	-1	135	138	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Cbra	-1	107	110	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Ndel	-1	95	98	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Cniv	-1	95	98	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Nbac	-1	133	136	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Ncas	-1	121	124	S/T-P-X-[LMIF]	0.0
+S/T-P-X-[LMIF]	Klac	-1	138	141	S/T-P-X-[LMIF]	0.0
+ENDGROUP	phosphorylation
